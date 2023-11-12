@@ -1,75 +1,26 @@
-# Nuxt 3 Minimal Starter
+# My personal website, blog, technologies I have used and more
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+visit [tjomas.co](https://tjomas.co)
 
-## Setup
+## Tech stack
 
-Make sure to install the dependencies:
+- [Nuxt 3](https://nuxt.com/)
+- [Nuxt Content](https://content.nuxt.com/)
+- [MasterCSS](https://css.master.co/)
+- See a list of modules used in the [nuxt.config.ts](nuxt.config.ts) file
 
-```bash
-# npm
-npm install
+## Local setup
 
-# pnpm
-pnpm install
+1. You need to install Node.js.
+1. install npm i -g @antfu/ni (For PowerShell users run this in your current terminal: `Remove-Item Alias:ni -Force -ErrorAction Ignore`)
+1. Clone this repo via `git clone`
+1. Run `ni` to install the dependencies
+1. Run `nr` to start the local Nuxt dev server
 
-# yarn
-yarn install
+## Security
 
-# bun
-bun install
-```
+If you discover any security related issues, please email hello@tjomas.co or use the issue tracker.
 
-## Development Server
+## License
 
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+The code of my website is licensed under The MIT License (MIT). Please see [License File](MIT%20LICENSE) for more information. All written articles or similar are licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).

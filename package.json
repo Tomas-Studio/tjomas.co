@@ -1,7 +1,14 @@
 {
-  "name": "nuxt-app",
+  "name": "tjomas.co",
   "private": true,
+  "description": "My Personal Website",
   "type": "module",
+  "license": "MIT",
+  "author": {
+    "email": "tjomas20@gmail.com",
+    "name": "Tunji Olakunle",
+    "url": "https://tjomas.co"
+  },
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
