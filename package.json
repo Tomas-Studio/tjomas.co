@@ -15,13 +15,25 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "lintfix": "eslint . --fix"
   },
   "devDependencies": {
+    "@antfu/eslint-config": "^1.1.1",
     "@antfu/ni": "^0.21.9",
     "@nuxt/devtools": "latest",
+    "eslint": "^8.53.0",
+    "lint-staged": "^15.1.0",
     "nuxt": "^3.8.1",
+    "simple-git-hooks": "^2.9.0",
     "vue": "^3.3.8",
     "vue-router": "^4.2.5"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "na lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint . --fix"
   }
 }
