@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "masterco.master-css-language-service",
+    "antfu.iconify",
+    "dbaeumer.vscode-eslint",
+    "antfu.goto-alias",
+    "csstools.postcss",
+    "vue.volar"
+  ]
+}

@@ -12,9 +12,10 @@ visit [tjomas.co](https://tjomas.co)
 ## Local setup
 
 1. You need to install Node.js.
-1. install npm i -g @antfu/ni (For PowerShell users run this in your current terminal: `Remove-Item Alias:ni -Force -ErrorAction Ignore`)
+1. install npm i -g @antfu/ni (For PowerShell users run this in your current terminal: `Remove-Item Alias:ni -Force -ErrorAction Ignore`). See [documentation](https://github.com/antfu/ni) on how to use it
 1. Clone this repo via `git clone`
 1. Run `ni` to install the dependencies
+1. Run `nlx simple-git-hooks`
 1. Run `nr` to start the local Nuxt dev server
 
 ## Security
