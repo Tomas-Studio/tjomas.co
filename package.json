@@ -24,6 +24,7 @@
     "@antfu/ni": "^0.21.9",
     "@master/css-server.nitro": "2.0.0-beta.203",
     "@master/css.vue": "2.0.0-beta.203",
+    "@master/normal.css": "2.0.0-beta.84",
     "@nuxt/devtools": "latest",
     "eslint": "^8.53.0",
     "lint-staged": "^15.1.0",
