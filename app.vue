@@ -1,7 +1,9 @@
 <script lang="ts" setup>
+import '@unocss/reset/tailwind.css'
+
 useHead({
   htmlAttrs: { lang: 'en' },
-  bodyAttrs: { class: 'f:antialiased' },
+  bodyAttrs: { class: '' },
   link: [{ rel: 'icon', href: '/images/uniport-sm.png' }],
 })
 
@@ -23,3 +25,12 @@ useSeoMeta({
     <NuxtPage />
   </NuxtLayout>
 </template>
+
+<style>
+html{
+  --uno: bg-white;
+}
+html.dark{
+  --uno: bg-dark;
+}
+</style>

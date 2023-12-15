@@ -11,7 +11,11 @@ import extractorMdc from '@unocss/extractor-mdc'
 
 export default defineConfig({
   shortcuts: {},
-  theme: {},
+  theme: {
+    colors: {
+      dark: '#050505',
+    },
+  },
   presets: [
     presetUno(),
     presetIcons(),
