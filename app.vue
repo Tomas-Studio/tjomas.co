@@ -1,15 +1,25 @@
 <script lang="ts" setup>
-import '@master/normal.css'
+useHead({
+  htmlAttrs: { lang: 'en' },
+  bodyAttrs: { class: 'f:antialiased' },
+  link: [{ rel: 'icon', href: '/images/uniport-sm.png' }],
+})
 
-const CSSProvider = defineAsyncComponent(async () => (await import('@master/css.vue')).CSSProvider)
+useSeoMeta({
+  title: 'Tunji builds stuff',
+  titleTemplate: title => (title !== 'Tunji Exploring the things' ? `${title} | Tunji Olakunle` : title),
+  description: 'My personal website, blog, software I use and things I build',
+  ogSiteName: 'Tunji builds stuff',
+  ogImage: 'https://tjomas.co/ogImage.webp',
+  ogImageAlt: 'Tunji builds stuff',
+  twitterImage: 'https://tjomas.co/ogImage.webp',
+  twitterCard: 'summary_large_image',
+  twitterSite: '@DevTjomas',
+})
 </script>
 
 <template>
-  <CSSProvider :config="import('./master.css')">
-    <div>
-      <h1 class="f:40 fg:red-54">
-        Hello World
-      </h1>
-    </div>
-  </CSSProvider>
+  <NuxtLayout>
+    <NuxtPage />
+  </NuxtLayout>
 </template>
