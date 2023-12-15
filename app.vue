@@ -8,7 +8,7 @@ useHead({
 })
 
 useSeoMeta({
-  title: 'Tunji builds stuff',
+  title: 'Tunji Exploring the things',
   titleTemplate: title => (title !== 'Tunji Exploring the things' ? `${title} | Tunji Olakunle` : title),
   description: 'My personal website, blog, software I use and things I build',
   ogSiteName: 'Tunji builds stuff',
@@ -28,7 +28,7 @@ useSeoMeta({
 
 <style>
 html{
-  --uno: bg-white;
+  --uno: bg-white dark:bg-dark;
 }
 html.dark{
   --uno: bg-dark;

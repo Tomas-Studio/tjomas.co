@@ -1,6 +1,5 @@
 <script setup lang="ts">
 const colorMode = useColorMode()
-
 function toggleMode() {
   colorMode.preference = colorMode.value === 'light' ? 'dark' : 'light'
 }
@@ -8,12 +7,14 @@ function toggleMode() {
 
 <template>
   <button
-    op60 cursor-pointer
+    op70 duration-300
+    cursor-pointer
     hover="op100"
+    text-inherit
     type="button"
     aria-label="Toggle color scheme"
-    :click="toggleMode"
+    @click="toggleMode()"
   >
-    <div i-ph-sun-dim-duotone dark:i-ph-moon-stars-duotone text-2xl />
+    <div i-ph-sun-dim-duotone dark:i-ph-moon-duotone text-2xl />
   </button>
 </template>
