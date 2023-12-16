@@ -1,3 +1,5 @@
 <template>
-  <div />
+  <header>
+    <SiteLayoutNavbarContent />
+  </header>
 </template>
