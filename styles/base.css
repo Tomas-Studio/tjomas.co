@@ -1,0 +1,14 @@
+html {
+  --uno: bg-white;
+}
+html.dark {
+  --uno: bg-dark;
+}
+
+body {
+  --uno: font-sans text-gray-7 dark:text-gray-2 ;
+}
+
+::selection{
+  --uno: bg-orange-4;
+}

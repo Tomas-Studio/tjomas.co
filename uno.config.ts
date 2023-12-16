@@ -21,9 +21,9 @@ export default defineConfig({
     presetIcons(),
     presetAttributify(),
     presetWebFonts({
-      provider: 'bunny',
+      provider: 'google',
       fonts: {
-        sans: 'DM Sans',
+        sans: 'Inter:300,400,500,600,700',
         mono: 'DM Mono',
       },
     }),

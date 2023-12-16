@@ -25,12 +25,3 @@ useSeoMeta({
     <NuxtPage />
   </NuxtLayout>
 </template>
-
-<style>
-html{
-  --uno: bg-white dark:bg-dark;
-}
-html.dark{
-  --uno: bg-dark;
-}
-</style>

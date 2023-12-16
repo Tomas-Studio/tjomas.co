@@ -1,3 +1,6 @@
 <template>
-  <div>Home page</div>
+  <div>
+    <ColorSchemeToggle />
+    <p>Home page table</p>
+  </div>
 </template>
