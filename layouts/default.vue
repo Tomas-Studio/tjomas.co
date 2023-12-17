@@ -1,9 +1,9 @@
 <template>
   <div flex="~ col" h100dvh>
-    <SiteLayoutNavBar />
+    <WebLayoutHeader />
     <main flex-1>
       <slot />
     </main>
-    <SiteLayoutFooter />
+    <WebLayoutFooter />
   </div>
 </template>

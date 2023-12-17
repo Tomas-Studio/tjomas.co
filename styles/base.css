@@ -6,7 +6,7 @@ html.dark {
 }
 
 body {
-  --uno: font-sans text-gray-7 dark:text-gray-2 ;
+  --uno: font-sans text-gray-7 dark:text-gray-3 ;
 }
 
 ::selection{

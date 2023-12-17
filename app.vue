@@ -4,7 +4,7 @@ import '@unocss/reset/tailwind.css'
 useHead({
   htmlAttrs: { lang: 'en' },
   bodyAttrs: { class: '' },
-  link: [{ rel: 'icon', href: '/images/uniport-sm.png' }],
+  link: [{ rel: 'icon', href: '/tjomas-co.png' }],
 })
 
 useSeoMeta({

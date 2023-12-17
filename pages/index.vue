@@ -1,6 +1,6 @@
 <template>
   <div>
-    <ColorSchemeToggle />
-    <p>Home page table</p>
+    <!-- <ColorSchemeToggle />
+    <p>Home page table</p> -->
   </div>
 </template>
