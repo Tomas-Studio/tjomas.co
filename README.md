@@ -17,6 +17,7 @@ visit [tjomas.co](https://tjomas.co)
 1. Run `ni` to install the dependencies
 1. Run `nlx simple-git-hooks`
 1. Run `nr` to start the local Nuxt dev server
+1. If you run into any error with any dev-dependency run `npx nuxi upgrade --force` 
 
 ## Security
 
