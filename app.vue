@@ -22,7 +22,7 @@ useSeoMeta({
 
 <template>
   <NuxtLayout>
-    <NuxtLoadingIndicator color="#" />
+    <NuxtLoadingIndicator color="#C2410C" :height="2" />
     <NuxtPage />
   </NuxtLayout>
 </template>
