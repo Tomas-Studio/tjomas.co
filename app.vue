@@ -8,8 +8,8 @@ useHead({
 })
 
 useSeoMeta({
-  title: 'Tunji Exploring the things',
-  titleTemplate: title => (title !== 'Tunji Exploring the things' ? `${title} | Tunji Olakunle` : title),
+  title: 'Tunji Olakunle',
+  titleTemplate: title => (title !== 'Tunji Olakunle' ? `${title} | Tunji Olakunle` : title),
   description: 'My personal website, blog, software I use and things I build',
   ogSiteName: 'Tunji builds stuff',
   ogImage: 'https://tjomas.co/ogImage.webp',
@@ -22,6 +22,7 @@ useSeoMeta({
 
 <template>
   <NuxtLayout>
+    <NuxtLoadingIndicator color="#" />
     <NuxtPage />
   </NuxtLayout>
 </template>
