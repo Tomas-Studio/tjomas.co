@@ -1,10 +1,3 @@
-<script setup lang="ts">
-const colorMode = useColorMode()
-function toggleMode() {
-  colorMode.preference = colorMode.value === 'light' ? 'dark' : 'light'
-}
-</script>
-
 <template>
   <button
     duration-300 px3 py3.5 sm:py3
@@ -13,7 +6,7 @@ function toggleMode() {
     focusable
     type="button"
     aria-label="Toggle color scheme"
-    @click="toggleMode()"
+    @click="toggleTheme"
   >
     <div i-line-md:moon-to-sunny-outline-loop-transition dark:i-solar:moon-outline text-5 />
   </button>
