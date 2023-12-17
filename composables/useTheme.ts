@@ -1,6 +1,7 @@
 const colorMode = useColorMode()
 
 /**
+ * Animate color mode switch,
  * Credit to [@hooray](https://github.com/hooray)
  * @see https://github.com/vuejs/vitepress/pull/2347
  */
