@@ -36,7 +36,7 @@ export default defineConfig({
     presetWebFonts({
       provider: 'google',
       fonts: {
-        sans: 'Inter:300,400,500,600,700',
+        sans: 'Nunito:300,400,500,600,700',
         mono: 'DM Mono',
         logo: [
           { name: 'Sacramento', weights: ['400'] },

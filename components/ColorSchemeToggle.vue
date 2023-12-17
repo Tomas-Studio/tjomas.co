@@ -15,6 +15,6 @@ function toggleMode() {
     aria-label="Toggle color scheme"
     @click="toggleMode()"
   >
-    <div i-solar:sun-outline dark:i-solar:moon-outline text-5 />
+    <div i-line-md:moon-to-sunny-outline-loop-transition dark:i-solar:moon-outline text-5 />
   </button>
 </template>
