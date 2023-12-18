@@ -1,4 +1,6 @@
 <script lang="ts" setup>
+import { breakpointsTailwind } from '@vueuse/core'
+
 type Props = {
   to: string
   icon: string
@@ -7,11 +9,13 @@ type Props = {
 defineProps<Props>()
 
 const route = useRoute()
+const breakpoints = useBreakpoints(breakpointsTailwind)
+const largerThanSm = breakpoints.greater('sm')
 </script>
 
 <template>
   <div relative inline-flex>
-    <NuxtLink v-tooltip.bottom="name" :to="to" :aria-label="name" class="profile-link" :class="[route.fullPath.includes(to) ? 'text-brand' : '']">
+    <NuxtLink v-tooltip.bottom="{ content: name, disabled: largerThanSm }" :to="to" :aria-label="name" class="profile-link" :class="[route.fullPath.includes(to) ? 'text-brand' : '']">
       <div aria-hidden="true" :class="icon" sm:hidden w5 h5 z5 />
       <span lt-sm:hidden text-3.75 z5 v-html="name" />
       <span v-show="route.fullPath.includes(to)" class="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-brand/0 via-brand to-brand/0 dark:(via-brand-dark)" />
