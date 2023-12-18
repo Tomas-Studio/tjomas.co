@@ -18,7 +18,7 @@ export default defineConfig({
     'profile-link': 'px3 py3.5 sm:py3 fcc text-inherit hover:text-brand active:text-brand-active focusable duration-300',
     'fcc': 'flex items-center justify-center',
     'fc': 'flex items-center',
-    'logo-st': 'font-logo py1 px2 text-6 sm:text-7 text-brand dark:(text-brand-dark active:text-brand-active) focusable hover:text-brand duration-400',
+    'logo-st': 'font-logo pb1 px2 text-6 sm:text-7 text-brand dark:(text-brand-dark active:text-brand-active) focusable hover:text-brand duration-400',
   },
   theme: {
     colors: {
@@ -37,7 +37,7 @@ export default defineConfig({
     presetWebFonts({
       provider: 'google',
       fonts: {
-        sans: 'Afacad:300,400,500,600,700',
+        sans: 'Josefin Sans:300,400,500,600,700',
         mono: 'DM Mono',
         logo: [
           { name: 'Zen Tokyo Zoo', weights: ['400'] },

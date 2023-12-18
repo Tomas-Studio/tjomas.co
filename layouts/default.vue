@@ -4,6 +4,7 @@
     <main flex-1>
       <slot />
     </main>
+    <GoBack />
     <WebLayoutFooter />
   </div>
 </template>
