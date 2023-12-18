@@ -13,11 +13,12 @@ export default defineConfig({
   shortcuts: {
     'navigation': 'flex gap-x-1 sm:gap-x-2 pl2 pr1 wfull bg-white/90 dark:bg-white/0 border border-gray-3 dark:border-gray-2/10 shadow-lg shadow-gray-9/6 dark:shadow-white/2 backdrop-blur rounded-sm',
     'nav-w': 'px5 py4 sm:(px6)',
-    'web-w': '',
+    'web-w': 'px5 wfull m-auto max-w-690px',
     'focusable': 'focus-visible:(outline-1 outline-offset-1 outline-brand outline-dashed)',
     'profile-link': 'px3 py3.5 sm:py3 fcc text-inherit hover:text-brand active:text-brand-active focusable duration-300',
     'fcc': 'flex items-center justify-center',
-    'logo-st': 'font-logo py1 px2 text-6 sm:text-7 text-brand dark:(text-brand-dark active:text-brand-active) focusable hover:text-brand duration-400',
+    'fc': 'flex items-center',
+    'logo-st': 'font-logo pb1 px2 text-6 sm:text-7 text-brand dark:(text-brand-dark active:text-brand-active) focusable hover:text-brand duration-400',
   },
   theme: {
     colors: {
@@ -36,10 +37,10 @@ export default defineConfig({
     presetWebFonts({
       provider: 'google',
       fonts: {
-        sans: 'Nunito:300,400,500,600,700',
+        sans: 'Josefin Sans:300,400,500,600,700',
         mono: 'DM Mono',
         logo: [
-          { name: 'Sacramento', weights: ['400'] },
+          { name: 'Zen Tokyo Zoo', weights: ['400'] },
           { name: 'cursive', provider: 'none' },
         ],
       },

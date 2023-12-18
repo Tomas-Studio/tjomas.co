@@ -1,0 +1,54 @@
+/* floating vue styles */
+
+.v-popper__popper .v-popper__inner {
+  font-size: 12px !important;
+  font-family: inherit !important;
+  color: inherit !important;
+  background-color: white !important;
+  border-radius: 4px !important;
+  border: 1px solid rgb(209 213 219 / 1);
+  padding: 3px 12px 3px 12px !important;
+}
+
+.dark .v-popper__popper .v-popper__inner{
+  background-color: #050505 !important;
+  border: 1px solid rgb(229 231 235 / 0.1);
+}
+
+.v-popper__popper .v-popper__arrow-inner {
+  visibility: hidden !important;
+}
+
+.v-popper__popper .v-popper__arrow-outer {
+  visibility: hidden !important;
+}
+
+/* Transition */
+
+.v-popper--theme-info-tooltip.v-popper__popper--hidden {
+  visibility: hidden !important;
+  opacity: 0 !important;
+  transform: translateY(-4px) !important;
+  transition: opacity .15s, visibility .15s, transform .3s;
+}
+
+.v-popper--theme-info-tooltip.v-popper__popper--shown {
+  visibility: visible !important;
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+  transition: opacity .15s, transform .3s !important;
+}
+
+/* .v-popper--theme-info-tooltip.v-popper__popper--show-from{
+  transform: translateY(-4px) !important;
+  transition: transform .3s !important;
+}
+
+.v-popper--theme-info-tooltip.v-popper__popper--show-to{
+  transform: translateY(0) !important;
+  transition: transform .3s !important;
+} */
+
+.v-popper--theme-info-tooltip.v-popper__popper--skip-transition {
+  transition: none !important;
+}
