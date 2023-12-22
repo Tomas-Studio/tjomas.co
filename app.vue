@@ -5,7 +5,7 @@ import FloatingVue from 'floating-vue'
 useHead({
   htmlAttrs: { lang: 'en' },
   bodyAttrs: { class: '' },
-  link: [{ rel: 'icon', href: '/tjomas-co.png' }],
+  link: [{ rel: 'icon', href: '/to-fav.png' }],
 })
 
 useSeoMeta({

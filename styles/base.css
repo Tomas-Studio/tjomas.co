@@ -10,7 +10,7 @@ body {
 }
 
 ::selection{
-  --uno: bg-brand/50 dark:bg-brand/30;
+  --uno: bg-brand/70 text-gray-9;
 }
 
 ::-webkit-scrollbar {

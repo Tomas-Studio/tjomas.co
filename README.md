@@ -6,7 +6,7 @@ visit [tjomas.co](https://tjomas.co)
 
 - [Nuxt 3](https://nuxt.com/)
 - [Nuxt Content](https://content.nuxt.com/)
-- [MasterCSS](https://css.master.co/)
+- [Unocss](https://unocss.dev/)
 - See a list of modules used in the [nuxt.config.ts](nuxt.config.ts) file
 
 ## Local setup

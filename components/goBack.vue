@@ -9,9 +9,9 @@ const goBack = computed(() => {
 </script>
 
 <template>
-  <div v-if="route.path !== '/'" web-w fc text-gray-5>
+  <div v-if="route.path !== '/'" web-w fyc text-gray-5>
     <div class="i-bx:chevron-right h5 w5 -ml1.5" />
-    <NuxtLink :to="goBack" ml1 underline underline-offset-3 hover="no-underline">
+    <NuxtLink :to="goBack" ml1 underline underline-offset-3 focusable hover="no-underline">
       cd  . .
     </NuxtLink>
   </div>
