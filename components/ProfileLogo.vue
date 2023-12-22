@@ -1,5 +1,5 @@
 <template>
-  <NuxtLink to="/" fyc>
+  <NuxtLink to="/" fyc focusable>
     <svg class="w48px h25px sm:h28px" viewBox="0 0 48 28" fill="none" xmlns="http://www.w3.org/2000/svg">
       <rect x="10" width="10" height="28" fill="#4285F4" fill-opacity="0.9" />
       <rect y="4" width="48" height="10" fill="#F4B400" fill-opacity="0.9" />

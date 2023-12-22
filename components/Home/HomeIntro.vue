@@ -1,7 +1,8 @@
 <template>
   <div web-w>
-    <p text-8>
-      Tunji Olakunle
+    <p text-6xl class="font-acorn">
+      Hi. I'm Tunji. <br>
+      A FronEnd Engineer
     </p>
   </div>
 </template>
