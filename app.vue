@@ -5,7 +5,7 @@ import FloatingVue from 'floating-vue'
 useHead({
   htmlAttrs: { lang: 'en' },
   bodyAttrs: { class: '' },
-  link: [{ rel: 'icon', href: '/tjomas-co.png' }],
+  link: [{ rel: 'icon', href: '/to-fav.png' }],
 })
 
 useSeoMeta({
@@ -27,8 +27,9 @@ onMounted(() => {
 </script>
 
 <template>
+  <NuxtLoadingIndicator color="#0F9D58" :height="2" />
   <NuxtLayout>
-    <NuxtLoadingIndicator color="#C2410C" :height="2" />
     <NuxtPage />
   </NuxtLayout>
+  <AriaAnnouncer />
 </template>
