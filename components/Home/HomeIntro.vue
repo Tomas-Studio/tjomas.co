@@ -14,7 +14,7 @@
     <div pt10>
       <p text-6xl class="font-acorn">
         Hi. I'm Tunji. <br>
-        A FronEnd Engineer
+        A FrontEnd Engineer
       </p>
     </div>
   </div>
