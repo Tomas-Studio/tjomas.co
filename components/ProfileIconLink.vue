@@ -9,7 +9,7 @@ defineProps<Props>()
 
 <template>
   <div relative inline-flex lt-sm:hidden>
-    <NuxtLink v-tooltip.bottom="name" :to="to" target="_blank" :aria-label="name" class="profile-link">
+    <NuxtLink v-tooltip.bottom="name" :to="to" target="_blank" :aria-label="`Link to ${name}`" class="profile-link">
       <div aria-hidden="true" :class="icon" w5 h5 z5 />
     </NuxtLink>
   </div>

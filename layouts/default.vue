@@ -1,7 +1,7 @@
 <template>
   <div flex="~ col" min-h-100dvh relative>
     <WebLayoutHeader />
-    <main flex-1 mt10>
+    <main flex-1>
       <slot />
     </main>
     <GoBack />

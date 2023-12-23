@@ -27,8 +27,9 @@ onMounted(() => {
 </script>
 
 <template>
+  <NuxtLoadingIndicator color="#0F9D58" :height="2" />
   <NuxtLayout>
-    <NuxtLoadingIndicator color="#0F9D58" :height="2" />
     <NuxtPage />
   </NuxtLayout>
+  <AriaAnnouncer />
 </template>
