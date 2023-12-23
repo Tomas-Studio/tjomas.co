@@ -13,7 +13,7 @@ export default defineConfig({
   shortcuts: {
     'navigation2': 'flex gap-x-1 sm:gap-x-2 pl2 pr1 wfull bg-white/90 dark:bg-white/3 border border-gray-3 dark:border-gray-2/20 shadow-lg shadow-gray-9/6 dark:shadow-white/2 backdrop-blur rounded-sm',
     'navigation': 'flex gap-x-1 sm:gap-x-2 wfull mxauto ww backdrop-blur ',
-    'ww': 'lt-sm:px5 max-w-6xl',
+    'ww': 'lt-lg:px5 max-w-6xl',
     'web-w': 'ww wfull mxauto',
     'focusable': 'focus-visible:(outline-1 outline-brand outline-dashed)',
     'profile-link': 'px3 py3.5 sm:py3 fcc text-inherit hover:text-brand active:text-brand-active focusable duration-300',
