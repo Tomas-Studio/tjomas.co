@@ -1,3 +1,4 @@
 <template>
   <HomeIntro />
+  <HomeNext />
 </template>
