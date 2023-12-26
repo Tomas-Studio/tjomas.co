@@ -26,16 +26,6 @@
       </div>
       <div lg:col-span-1 fxc>
         <!-- to be decided what to have here -->
-        <!-- <div bg-brand-green>
-          <div h100 of-hidden class="rounded-tl-xl rounded-br-full" >
-            <NuxtImg
-              src="/img/profile-image.webp"
-              format="webp"
-              alt="Tunji Olakunle's profile image"
-              h-inherit object-cover
-            />
-          </div>
-        </div> -->
       </div>
     </div>
   </div>
