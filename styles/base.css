@@ -6,12 +6,16 @@ html.dark {
 }
 
 body {
-  --uno: font-sans text-gray-7 dark:text-gray-3;
+  --uno: font-sans text-gray-8 dark:text-gray-3;
 }
 
 .font-acorn {
   font-family: 'acorn', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
   font-weight: 700;
+}
+
+a {
+  --uno: focusable;
 }
 
 ::selection{

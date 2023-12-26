@@ -6,8 +6,18 @@
     </div>
     <div ml2 font-logo font-italic>
       <p block text-5 relative>
-        tjomas
+        👋🏼 tjomas
       </p>
     </div>
   </NuxtLink>
+  <!-- <div bg-brand-green>
+    <div h100 of-hidden class="rounded-tl-xl rounded-br-full" >
+      <NuxtImg
+        src="/img/profile-image.webp"
+        format="webp"
+        alt="Tunji Olakunle's profile image"
+        h-inherit object-cover
+      />
+    </div>
+  </div> -->
 </template>

@@ -1,5 +1,4 @@
 <template>
-  <div>
-    <HomeIntro />
-  </div>
+  <HomeIntro />
+  <HomeNext />
 </template>
