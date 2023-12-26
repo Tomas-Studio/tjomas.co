@@ -6,7 +6,7 @@
     </div>
     <div ml2 font-logo font-italic>
       <p block text-5 relative>
-        tjomas
+        👋🏼 tjomas
       </p>
     </div>
   </NuxtLink>
