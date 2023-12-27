@@ -2,7 +2,7 @@
   "name": "tjomas.co",
   "type": "module",
   "private": true,
-  "packageManager": "pnpm@8.9.2",
+  "packageManager": "pnpm@8.13.1",
   "description": "My Personal Website and CV",
   "author": {
     "email": "tjomas20@gmail.com",
@@ -20,21 +20,21 @@
     "lintfix": "eslint . --fix"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^1.1.1",
-    "@antfu/ni": "^0.21.9",
-    "@iconify/json": "^2.2.158",
+    "@antfu/eslint-config": "^1.2.1",
+    "@antfu/ni": "^0.21.12",
+    "@iconify/json": "^2.2.161",
     "@nuxt/devtools": "latest",
     "@nuxt/image": "^1.1.0",
     "@nuxtjs/color-mode": "^3.3.2",
     "@unocss/extractor-mdc": "^0.58.0",
     "@unocss/nuxt": "^0.58.0",
     "@vueuse/nuxt": "^10.7.0",
-    "eslint": "^8.53.0",
+    "eslint": "^8.56.0",
     "floating-vue": "2.0.0-beta.24",
-    "lint-staged": "^15.1.0",
-    "nuxt": "^3.8.1",
+    "lint-staged": "^15.2.0",
+    "nuxt": "^3.9.0",
     "simple-git-hooks": "^2.9.0",
-    "vue": "^3.3.8",
+    "vue": "^3.3.13",
     "vue-router": "^4.2.5"
   },
   "simple-git-hooks": {
