@@ -5,6 +5,6 @@
       <slot />
     </main>
     <GoBack />
-    <WebLayoutFooter2 />
+    <WebLayoutFooter />
   </div>
 </template>

@@ -14,9 +14,9 @@ body {
   font-weight: 700;
 }
 
-a {
+/* a {
   --uno: focusable;
-}
+} */
 
 ::selection{
   --uno: bg-brand-green/70 text-gray-9;
