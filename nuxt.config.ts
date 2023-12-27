@@ -7,6 +7,7 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     'floating-vue/nuxt',
     '@nuxt/image',
+    '@nuxt/content',
   ],
   colorMode: { classSuffix: '', preference: 'dark', storageKey: 'site-color-mode' },
   css: ['~/styles/base.css', '~/styles/overrides.css', '~/styles/font.css'],
