@@ -4,7 +4,7 @@ const footerLinks = [
     header: 'directories',
     links: [
       { title: 'About', link: '/about', external: false },
-      { title: 'Articles', link: '/posts', external: false },
+      { title: 'Articles', link: '/articles', external: false },
       { title: 'Projects', link: '/projects', external: false },
       { title: 'Experiences', link: '/experiences', external: false },
       { title: 'RSS', link: '/about', external: true },
