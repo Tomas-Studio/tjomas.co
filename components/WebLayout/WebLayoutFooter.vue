@@ -4,7 +4,7 @@ const footerLinks = [
     header: 'directories',
     links: [
       { title: 'About', link: '/about', external: false },
-      { title: 'Articles', link: '/posts', external: false },
+      { title: 'Articles', link: '/articles', external: false },
       { title: 'Projects', link: '/projects', external: false },
       { title: 'Experiences', link: '/experiences', external: false },
       { title: 'RSS', link: '/about', external: true },
@@ -29,7 +29,7 @@ const route = useRoute()
     <div web-w pt14 pb18>
       <div grid grid-cols-1 sm:grid-cols-2 gap-5>
         <div sm:col-span-1 gap-y-2>
-          <SpotifyRecentPlay />
+          <!-- <SpotifyRecentPlay /> -->
           <WebLayoutCopyright lt-sm:hidden />
         </div>
         <div sm:col-span-1 grid grid-cols-2>

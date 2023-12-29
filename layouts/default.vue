@@ -6,5 +6,7 @@
     </main>
     <GoBack />
     <WebLayoutFooter />
+    <SvgPattern />
+    <SpotifyRecentPlay />
   </div>
 </template>

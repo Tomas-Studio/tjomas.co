@@ -29,11 +29,13 @@
     "@nuxtjs/color-mode": "^3.3.2",
     "@unocss/extractor-mdc": "^0.58.0",
     "@unocss/nuxt": "^0.58.0",
+    "@vueuse/motion": "^2.0.0",
     "@vueuse/nuxt": "^10.7.0",
     "eslint": "^8.56.0",
     "floating-vue": "2.0.0-beta.24",
     "lint-staged": "^15.2.0",
     "nuxt": "^3.9.0",
+    "remark-reading-time": "^2.0.1",
     "simple-git-hooks": "^2.9.0",
     "vue": "^3.3.13",
     "vue-router": "^4.2.5"

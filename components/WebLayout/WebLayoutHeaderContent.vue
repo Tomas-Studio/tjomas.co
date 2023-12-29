@@ -3,7 +3,7 @@
     <ProfileLogo />
     <div flex-auto />
     <!-- <ProfileLink name="Home" to="/" icon="i-solar:home-angle-outline" /> -->
-    <ProfileLink name="articles" to="/posts" icon="i-fluent:document-one-page-multiple-24-regular" />
+    <ProfileLink name="articles" to="/articles" icon="i-fluent:document-one-page-multiple-24-regular" />
     <ProfileLink name="projects" to="/projects" icon="i-solar:folder-outline" />
     <ProfileLink name="experience" to="/experience" icon="i-simple-icons:readdotcv" />
     <ProfileLink name="About" to="/about" icon="i-simple-icons-aboutdotme" />
