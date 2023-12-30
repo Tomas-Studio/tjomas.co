@@ -42,7 +42,7 @@ export default defineConfig({
     presetWebFonts({
       provider: 'google',
       fonts: {
-        sans: 'Preahvihear:300,400,500,600,700',
+        sans: 'Quicksand:300,400,500,600,700',
         mono: 'DM Mono',
         logo: [
           { name: 'Merriweather', weights: ['400'], italic: true },
