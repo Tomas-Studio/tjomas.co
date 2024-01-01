@@ -1,7 +1,5 @@
 import type { Ref } from 'vue'
 
-// export const usePlayer = () => useState<HTMLAudioElement | null>('audio-el', () => null)
-
 /**
  * Control audio tag / player
  * @param el audio element
