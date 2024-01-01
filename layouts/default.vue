@@ -5,7 +5,7 @@
       <slot />
     </main>
     <GoBack />
-    <WebLayoutFooter />
+    <WebLayoutFooter2 />
     <SvgPattern />
     <SpotifyRecentPlay />
   </div>

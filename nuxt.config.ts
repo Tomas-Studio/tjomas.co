@@ -18,4 +18,8 @@ export default defineNuxtConfig({
     // @ts-expect-error recent theme exclude in type
     highlight: { theme: 'vitesse-black' },
   },
+  runtimeConfig: {
+    spotifyClientSecret: process.env.NUXT_PUBLIC_SPOTIFY_CLIENT_SECRET,
+    spotifyClientId: process.env.NUXT_PUBLIC_SPOTIFY_CLIENT_ID,
+  },
 })
