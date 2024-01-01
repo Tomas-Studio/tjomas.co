@@ -1,5 +1,5 @@
 <template>
-  <svg v-if="$route.fullPath === '/'" class="absolute top-0 right-0 top-0 -z-10 h-50rem w-full md:w1/2 stroke-brand-yellow/20 dark:stroke-brand-yellow/20 [mask-image:radial-gradient(25rem_25rem_at_center,white,transparent)]" aria-hidden="true">
+  <svg v-if="$route.fullPath === '/'" class="fixed top-0 right-0 top-0 -z-10 h-50rem w-full md:w1/2 stroke-brand-yellow/20 dark:stroke-brand-yellow/20 [mask-image:radial-gradient(25rem_25rem_at_center,white,transparent)]" aria-hidden="true">
     <defs>
       <pattern id="box" width="200" height="200" x="50%" y="-1" patternUnits="userSpaceOnUse">
         <path d="M.5 200V.5H200" fill="none" />
