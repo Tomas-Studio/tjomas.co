@@ -12,7 +12,7 @@ import extractorMdc from '@unocss/extractor-mdc'
 export default defineConfig({
   shortcuts: {
     'navigation2': 'flex gap-x-1 sm:gap-x-2 pl2 pr1 wfull bg-white/90 dark:bg-white/3 border border-gray-3 dark:border-gray-2/20 shadow-lg shadow-gray-9/6 dark:shadow-white/2 backdrop-blur rounded-sm',
-    'navigation': 'flex gap-x-1 sm:gap-x-2 wfull mxauto ww backdrop-blur ',
+    'navigation': 'flex gap-x-1 sm:gap-x-2 wfull mxauto ww',
     'ww': 'lt-lg:px5 max-w-6xl',
     'web-w': 'ww wfull mxauto',
     'focusable': 'focus-visible:(outline-1 outline-brand outline-dashed)',

@@ -3,8 +3,8 @@ import '@unocss/reset/tailwind.css'
 import FloatingVue from 'floating-vue'
 
 useHead({
-  htmlAttrs: { lang: 'en' },
-  bodyAttrs: { class: '' },
+  htmlAttrs: { lang: 'en', class: 'bg-white' },
+  bodyAttrs: { class: 'font-sans text-gray-8 dark:text-gray-3' },
   link: [{ rel: 'icon', href: '/to-fav.png' }],
 })
 
