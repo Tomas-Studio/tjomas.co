@@ -15,7 +15,7 @@ const footerLinks = [
     links: [
       { title: 'Email', link: 'mailto:tjomas24@gmail.com?subject=Hi Tunji', external: false },
       { title: 'Twitter', link: 'https://x.com/@TunjiOlakunle', external: true },
-      { title: 'LinkedIn', link: 'https://linkedIn.com/@TunjiOlakunle', external: true },
+      { title: 'LinkedIn', link: 'https://www.linkedin.com/in/olatunji-olakunle', external: true },
       // { title: 'iMessage', link: 'imessage://tjomas96@yahoo.com', external: true },
     ],
   },
