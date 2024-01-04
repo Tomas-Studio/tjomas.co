@@ -15,7 +15,7 @@ const footerLinks = [
     links: [
       { title: 'Email', link: 'mailto:tjomas24@gmail.com?subject=Hi Tunji', external: false },
       { title: 'Twitter', link: 'https://x.com/@TunjiOlakunle', external: true },
-      { title: 'LinkedIn', link: 'https://linkedIn.com/@TunjiOlakunle', external: true },
+      { title: 'LinkedIn', link: 'https://www.linkedin.com/in/olatunji-olakunle', external: true },
       // { title: 'iMessage', link: 'imessage://tjomas96@yahoo.com', external: true },
     ],
   },
@@ -29,7 +29,6 @@ const route = useRoute()
     <div web-w pt14 pb18>
       <div grid grid-cols-1 sm:grid-cols-2 gap-5>
         <div sm:col-span-1 gap-y-2>
-          <!-- <SpotifyRecentPlay /> -->
           <WebLayoutCopyright lt-sm:hidden />
         </div>
         <div sm:col-span-1 grid grid-cols-2>
