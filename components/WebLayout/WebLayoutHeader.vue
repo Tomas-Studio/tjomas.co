@@ -16,8 +16,8 @@ onMounted(() => {
 
 <template>
   <header
-    class=" fixed top-0 left-0 flex wfull py3 sm:py4 z-40 bg-white/80 dark:bg-dark/80 duration-300 ease-in-out transition-transform"
-    :class="[scroll > 50 ? 'backdrop-blur-2' : '', showNav ? '' : '-translate-y-full']"
+    class=" fixed top-0 left-0 flex wfull py3 sm:py4 z-40 duration-300 ease-in-out transition-transform"
+    :class="[scroll > 80 ? 'backdrop-blur-2 bg-white/80 dark:bg-dark/80' : '', showNav ? '' : '-translate-y-full']"
   >
     <WebLayoutHeaderContent />
   </header>
