@@ -19,17 +19,17 @@ const enter = ref({ width: 180, opacity: 1, marginLeft: 4 })
 <template>
   <div
     v-if="track"
-    bg-brand-green fixed bottom-4 left-3
+    bg-brand-green fixed bottom-4 left-5
     wmax p1.5 rounded-full fyc
     transition-all duration-300
     @mouseenter="show = true"
     @mouseleave="show = false"
     @focusin="show = true"
     @focusout="show = false"
-    @focus="show = false"
+    @focus="show = true"
   >
     <button
-      aria-label="Play Experience by Ludovico Einaudi"
+      :aria-label="`Play a preview of ${track.name} by ${track.artists.map((e: any) => e.name).join(', ')}`"
       active:text-brand-yellow duration-300 rounded-full
       focus-visible="~ outline-2 outline-brand-yellow outline-dashed"
       @click="play"

@@ -5,8 +5,8 @@
       <slot />
     </main>
     <GoBack />
-    <WebLayoutFooter2 />
-    <SvgPattern />
+    <!-- <WebLayoutFooter2 /> -->
+    <!-- <SvgPattern /> -->
     <SpotifyRecentPlay />
   </div>
 </template>

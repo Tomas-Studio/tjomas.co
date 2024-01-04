@@ -29,7 +29,6 @@ const route = useRoute()
     <div web-w pt14 pb18>
       <div grid grid-cols-1 sm:grid-cols-2 gap-5>
         <div sm:col-span-1 gap-y-2>
-          <!-- <SpotifyRecentPlay /> -->
           <WebLayoutCopyright lt-sm:hidden />
         </div>
         <div sm:col-span-1 grid grid-cols-2>
