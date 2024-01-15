@@ -2,18 +2,14 @@
   <div web-w relative>
     <div pt10>
       <div>
-        <h1 text-4xl mb1 text-brand-green class="font-acorn">
-          Tunji Olakunle
+        <h1 text-4xl mb1 class="font-acorn">
+          Hi, I'm <span> Tunji Olakunle</span>,
         </h1>
         <p>
-          Hi, I'm Tunji Olakunle,
-          a Software Engineer.
+          A Software Engineer, currently working at CypherCrescent.
         </p>
         <p mt2>
-          Currently, I am a Frontend Team Lead at CypherCrescent, I love bringing designs & ideas to live.
-        </p>
-        <p mt2>
-          My focus is building maintainable, accessible & user-focused interfaces.
+          I love bringing ideas to live and my focus is building maintainable, accessible & user-focused interfaces. I am currently working on some side projects (might lead to a startup)
         </p>
       </div>
     </div>

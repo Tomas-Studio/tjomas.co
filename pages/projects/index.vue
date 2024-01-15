@@ -3,7 +3,7 @@ useHead({ title: 'Projects' })
 </script>
 
 <template>
-  <div web-w text-5xl class="font-acorn">
+  <div web-w text-4xl class="font-acorn">
     Projects
   </div>
 </template>
