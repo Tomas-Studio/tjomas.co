@@ -3,7 +3,9 @@ useHead({ title: 'Projects' })
 </script>
 
 <template>
-  <div web-w text-4xl class="font-acorn">
-    Projects
+  <div web-w pt8>
+    <h1 class="font-acorn text-4xl">
+      Projects
+    </h1>
   </div>
 </template>
