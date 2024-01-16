@@ -31,7 +31,8 @@ export default defineConfig({
     colors: {
       dark: '#050505',
       brand: {
-        DEFAULT: '#4285F4',
+        DEFAULT: '#0F9D58',
+        // DEFAULT: '#4285F4',
         dark: '#3569BE',
         active: '#294F8E',
         red: '#DB4437',
