@@ -31,8 +31,8 @@ export default defineConfig({
     colors: {
       dark: '#050505',
       brand: {
-        DEFAULT: '#0F9D58',
-        // DEFAULT: '#4285F4',
+        // DEFAULT: '#0F9D58',
+        DEFAULT: '#4285F4',
         dark: '#3569BE',
         active: '#294F8E',
         red: '#DB4437',
@@ -50,12 +50,8 @@ export default defineConfig({
       fonts: {
         sans: 'Urbanist:300,400,500,600,700,800,900',
         mono: 'DM Mono',
-        logo: [
-          { name: 'Merriweather', weights: ['400'], italic: true },
-          { name: 'sans serif', provider: 'none' },
-        ],
         secondary: [
-          { name: 'Libre Baskerville', weights: ['400'] },
+          { name: 'Libre Baskerville', weights: ['400'], italic: true },
           { name: 'serif', provider: 'none' },
         ],
       },

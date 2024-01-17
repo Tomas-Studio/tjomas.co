@@ -20,21 +20,20 @@ const cardTransform = computed(() => {
 </script>
 
 <template>
-  <div web-w relative>
+  <div web-w relative block>
     <div pt12>
       <div relative>
-        <div ref="card" :style="{ transform: cardTransform }" class="absolute right-0 top--5 h-100 w-120 of-hidden rounded-8 z--1 bg-neutral-3/50 dark:bg-neutral-8/50 preserve-3d transition-transform duration-250 ease-out">
-          <!-- <img src="/img/mountains-2.jpg" hfull alt=""> -->
+        <div ref="card" :style="{ transform: cardTransform }" class="absolute right-0 top--2 lg:top--5 h-70 w-80 lg:h-100 lg:w-120 of-hidden rounded-8 z--1 bg-neutral-3/50 dark:bg-neutral-8/50 preserve-3d transition-transform duration-250 ease-out">
+          <!-- <img src="/img/mountains-4.jpg" op60 filter-hue-rotate-260 hfull alt=""> -->
         </div>
         <div relative z-2>
           <h2 block mb2 text-lg>
             hey there!
           </h2>
-          <!-- <button p4 w40 rounded-full border border-white absolute class="top-40%" left--15 >click me</button> -->
-          <div class="font-acorn text-8xl flex-col gap-y-1">
+          <div class="font-acorn text-6xl sm:text-7xl lg:text-8xl flex-col gap-y-1">
             <div>I'm Tunji.</div>
-            <div relative ml25 text-brand dark:text-brand-yellow>
-              A <span>FrontEnd</span>
+            <div relative lg:ml25 text-brand dark:text-brand-yellow>
+              A <span>Software</span>
             </div>
             <div text-brand dark:text-brand-yellow>
               Engineer
