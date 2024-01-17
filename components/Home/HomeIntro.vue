@@ -1,53 +1,46 @@
+<script setup lang="ts">
+const { x, y } = useMouse()
+
+const card = ref<HTMLDivElement | null>(null)
+const { height, width } = useElementSize(card)
+
+const cardTransform = computed(() => {
+  const MAX_ROTATION = 7
+
+  const rX = (
+    MAX_ROTATION / 2 - (y.value / height.value) * MAX_ROTATION
+  ).toFixed(2) // x-axis rotation
+
+  const rY = (
+    (x.value / width.value) * MAX_ROTATION - MAX_ROTATION / 2
+  ).toFixed(2) // y-axis rotation
+
+  return `perspective(${width.value}px) rotateX(${rX}deg) rotateY(${rY}deg)`
+})
+</script>
+
 <template>
   <div web-w relative>
-    <div pt10>
-      <div>
-        <h1 text-4xl mb1 text-brand-green class="font-acorn">
-          Tunji Olakunle
-        </h1>
-        <p>
-          Hi, I'm Tunji Olakunle,
-          a Software Engineer.
-        </p>
-        <p mt2>
-          Currently, I am a Frontend Team Lead at CypherCrescent, I love bringing designs & ideas to live.
-        </p>
-        <p mt2>
-          My focus is building maintainable, accessible & user-focused interfaces.
-        </p>
-      </div>
-      <div>
-        <!-- to be decided what to have here -->
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id nemo ipsum assumenda optio perspiciatis repudiandae hic aspernatur quos quibusdam, cum modi tenetur quas architecto accusantium voluptas nesciunt, dolorum cupiditate dolorem?
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum natus delectus ex quia, vero facere quibusdam excepturi vitae cumque non earum tenetur distinctio adipisci unde quos dolore exercitationem, aspernatur maxime!
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum esse quia, illo iste, illum fuga quidem dicta, rerum possimus facilis ratione officiis. Quod sit cum placeat error eaque maiores id?
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero atque debitis pariatur iusto inventore commodi id placeat delectus hic, fugit molestias excepturi quo, velit porro, harum exercitationem vero cumque. Nam!
-        </p>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id nemo ipsum assumenda optio perspiciatis repudiandae hic aspernatur quos quibusdam, cum modi tenetur quas architecto accusantium voluptas nesciunt, dolorum cupiditate dolorem?
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum natus delectus ex quia, vero facere quibusdam excepturi vitae cumque non earum tenetur distinctio adipisci unde quos dolore exercitationem, aspernatur maxime!
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum esse quia, illo iste, illum fuga quidem dicta, rerum possimus facilis ratione officiis. Quod sit cum placeat error eaque maiores id?
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero atque debitis pariatur iusto inventore commodi id placeat delectus hic, fugit molestias excepturi quo, velit porro, harum exercitationem vero cumque. Nam!
-        </p>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id nemo ipsum assumenda optio perspiciatis repudiandae hic aspernatur quos quibusdam, cum modi tenetur quas architecto accusantium voluptas nesciunt, dolorum cupiditate dolorem?
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum natus delectus ex quia, vero facere quibusdam excepturi vitae cumque non earum tenetur distinctio adipisci unde quos dolore exercitationem, aspernatur maxime!
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum esse quia, illo iste, illum fuga quidem dicta, rerum possimus facilis ratione officiis. Quod sit cum placeat error eaque maiores id?
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero atque debitis pariatur iusto inventore commodi id placeat delectus hic, fugit molestias excepturi quo, velit porro, harum exercitationem vero cumque. Nam!
-        </p>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id nemo ipsum assumenda optio perspiciatis repudiandae hic aspernatur quos quibusdam, cum modi tenetur quas architecto accusantium voluptas nesciunt, dolorum cupiditate dolorem?
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum natus delectus ex quia, vero facere quibusdam excepturi vitae cumque non earum tenetur distinctio adipisci unde quos dolore exercitationem, aspernatur maxime!
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum esse quia, illo iste, illum fuga quidem dicta, rerum possimus facilis ratione officiis. Quod sit cum placeat error eaque maiores id?
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero atque debitis pariatur iusto inventore commodi id placeat delectus hic, fugit molestias excepturi quo, velit porro, harum exercitationem vero cumque. Nam!
-        </p>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id nemo ipsum assumenda optio perspiciatis repudiandae hic aspernatur quos quibusdam, cum modi tenetur quas architecto accusantium voluptas nesciunt, dolorum cupiditate dolorem?
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum natus delectus ex quia, vero facere quibusdam excepturi vitae cumque non earum tenetur distinctio adipisci unde quos dolore exercitationem, aspernatur maxime!
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum esse quia, illo iste, illum fuga quidem dicta, rerum possimus facilis ratione officiis. Quod sit cum placeat error eaque maiores id?
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero atque debitis pariatur iusto inventore commodi id placeat delectus hic, fugit molestias excepturi quo, velit porro, harum exercitationem vero cumque. Nam!
-        </p>
+    <div pt12>
+      <div relative>
+        <div ref="card" :style="{ transform: cardTransform }" class="absolute right-0 top--5 h-100 w-120 of-hidden rounded-8 z--1 bg-neutral-3/50 dark:bg-neutral-8/50 preserve-3d transition-transform duration-250 ease-out">
+          <!-- <img src="/img/mountains-2.jpg" hfull alt=""> -->
+        </div>
+        <div relative z-2>
+          <h2 block mb2 text-lg>
+            hey there!
+          </h2>
+          <!-- <button p4 w40 rounded-full border border-white absolute class="top-40%" left--15 >click me</button> -->
+          <div class="font-acorn text-8xl flex-col gap-y-1">
+            <div>I'm Tunji.</div>
+            <div relative ml25 text-brand dark:text-brand-yellow>
+              A <span>FrontEnd</span>
+            </div>
+            <div text-brand dark:text-brand-yellow>
+              Engineer
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>

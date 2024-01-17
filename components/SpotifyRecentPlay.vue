@@ -44,7 +44,7 @@ const enter = ref({ width: 180, opacity: 1, marginLeft: 4 })
         ]"
       />
     </button>
-    <audio ref="audioTag" aria-hidden="true" sr-only :src="track.preview_url" @ended="isPaused = false" />
+    <audio ref="audioTag" aria-hidden="true" sr-only :src="track.preview_url" loop @ended="isPaused = false" />
     <Transition :css="false" @leave="(_: any, done: () => void) => motions.title.leave(done)">
       <div
         v-if="show"
