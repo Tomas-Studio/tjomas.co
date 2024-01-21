@@ -21,22 +21,19 @@ const cardTransform = computed(() => {
 
 <template>
   <div web-w relative block>
-    <div pt12>
+    <div pt16>
       <div relative>
-        <div ref="card" :style="{ transform: cardTransform }" class="absolute right-0 top--2 lg:top--5 h-70 w-80 lg:h-100 lg:w-120 of-hidden rounded-8 z--1 bg-neutral-3/50 dark:bg-neutral-8/50 preserve-3d transition-transform duration-250 ease-out">
-          <!-- <img src="/img/mountains-4.jpg" op60 filter-hue-rotate-260 hfull alt=""> -->
-        </div>
+        <div ref="card" :style="{ transform: cardTransform }" class="absolute left-8 lg:left-1/10 top--2 lg:top--5 h-60 w-75 lg:h-90 lg:w-110 of-hidden rounded-8 z--1 bg-neutral-3/50 dark:bg-neutral-8/50 preserve-3d transition-transform duration-250 ease-out" />
         <div relative z-2>
-          <h2 block mb2 text-lg>
-            hey there!
-          </h2>
           <div class="font-acorn text-6xl sm:text-7xl lg:text-8xl flex-col gap-y-1">
-            <div>I'm Tunji.</div>
-            <div relative lg:ml25 text-brand dark:text-brand-yellow>
-              A <span>Software</span>
+            <div relative lg:ml20>
+              Converting
             </div>
-            <div text-brand dark:text-brand-yellow>
-              Engineer
+            <div wmax relative>
+              Designs <span text-2xl text-brand-yellow absolute right--10 lg:right--16 top-3.5 lg:top-8>to</span>
+            </div>
+            <div relative lg:ml20>
+              Products
             </div>
           </div>
         </div>

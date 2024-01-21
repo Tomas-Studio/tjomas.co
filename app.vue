@@ -5,7 +5,7 @@ import FloatingVue from 'floating-vue'
 useHead({
   htmlAttrs: { lang: 'en', class: 'bg-white' },
   bodyAttrs: { class: 'font-sans text-gray-8 dark:text-gray-3' },
-  link: [{ rel: 'icon', href: '/to-favicon.png' }],
+  link: [{ rel: 'icon', href: '/to-favicon-2.png' }],
 })
 
 useSeoMeta({

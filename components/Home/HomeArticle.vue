@@ -3,7 +3,7 @@ const list = ['Nuxt', 'Scala', 'Optimization']
 </script>
 
 <template>
-  <div block web-w mt30 lg:mt40>
+  <div block web-w mt12 lg:mt20>
     <div fyc mb6>
       <div i-ic-baseline-edit text-base mr1 />
       <h3 uppercase text-sm fw600 tracking-wide>
