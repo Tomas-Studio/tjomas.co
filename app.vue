@@ -10,7 +10,7 @@ useHead({
 
 useSeoMeta({
   title: 'Tunji Olakunle',
-  titleTemplate: title => (title !== 'Tunji Olakunle' ? `${title} | Tunji Olakunle` : title),
+  titleTemplate: title => (title !== 'Tunji Olakunle' ? `${title} • Tunji Olakunle` : title),
   description: 'My personal website, blog, software I use and things I build',
   ogSiteName: 'Tunji builds stuff',
   ogImage: 'https://tjomas.co/ogImage.webp',

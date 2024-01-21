@@ -43,7 +43,7 @@ const projects = [
 
 <style scoped>
 .home-project {
-  --uno: relative mb8 focus-visible:outline-none;
+  --uno: relative mb12 focus-visible:outline-none;
   & .p-title {
     --uno: text-3xl;
   }
