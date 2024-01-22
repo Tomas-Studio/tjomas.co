@@ -20,24 +20,20 @@ const cardTransform = computed(() => {
 </script>
 
 <template>
-  <div web-w relative>
-    <div pt12>
+  <div web-w relative block>
+    <div pt16>
       <div relative>
-        <div ref="card" :style="{ transform: cardTransform }" class="absolute right-0 top--5 h-100 w-120 of-hidden rounded-8 z--1 bg-neutral-3/50 dark:bg-neutral-8/50 preserve-3d transition-transform duration-250 ease-out">
-          <!-- <img src="/img/mountains-2.jpg" hfull alt=""> -->
-        </div>
+        <div ref="card" :style="{ transform: cardTransform }" class="absolute left-8 lg:left-1/10 top--2 lg:top--5 h-60 w-75 lg:h-90 lg:w-110 of-hidden rounded-8 z--1 bg-neutral-2/40 dark:bg-neutral-9/40 preserve-3d transition-transform duration-250 ease-out" />
         <div relative z-2>
-          <h2 block mb2 text-lg>
-            hey there!
-          </h2>
-          <!-- <button p4 w40 rounded-full border border-white absolute class="top-40%" left--15 >click me</button> -->
-          <div class="font-acorn text-8xl flex-col gap-y-1">
-            <div>I'm Tunji.</div>
-            <div relative ml25 text-brand dark:text-brand-yellow>
-              A <span>FrontEnd</span>
+          <div class="font-acorn text-6xl sm:text-7xl lg:text-8xl flex-col gap-y-1">
+            <div relative lg:ml20>
+              Converting
             </div>
-            <div text-brand dark:text-brand-yellow>
-              Engineer
+            <div wmax relative>
+              Designs <span text-2xl text-brand-yellow absolute right--10 lg:right--16 top-3.5 lg:top-8>to</span>
+            </div>
+            <div relative lg:ml20>
+              Products
             </div>
           </div>
         </div>

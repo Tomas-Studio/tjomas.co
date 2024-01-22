@@ -2,7 +2,7 @@
   <button
     duration-300 px3 py3.5 sm:py3
     cursor-pointer
-    hover="text-brand-dark"
+    hover="text-brand-green"
     focusable
     type="button"
     aria-label="Toggle color scheme"

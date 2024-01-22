@@ -26,7 +26,7 @@ onMounted(() => {
   router.afterEach((_, from) => {
     from && setTimeout(() => {
       requestAnimationFrame(() => {
-        const title = document.title.trim().split('|')
+        const title = document.title.trim().split('•')
         announce(`${title[0]} Page Loaded`)
       })
     }, 500)
