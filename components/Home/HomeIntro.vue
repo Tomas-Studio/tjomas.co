@@ -23,7 +23,7 @@ const cardTransform = computed(() => {
   <div web-w relative block>
     <div pt16>
       <div relative>
-        <div ref="card" :style="{ transform: cardTransform }" class="absolute left-8 lg:left-1/10 top--2 lg:top--5 h-60 w-75 lg:h-90 lg:w-110 of-hidden rounded-8 z--1 bg-neutral-2/40 dark:bg-neutral-9/40 preserve-3d transition-transform duration-250 ease-out" />
+        <div ref="card" :style="{ transform: cardTransform }" class="absolute left-4 lg:left-1/10 top--5 h-60 w-75 lg:h-90 lg:w-110 of-hidden rounded-8 z--1 bg-neutral-2/40 dark:bg-neutral-9/40 preserve-3d transition-transform duration-250 ease-out" />
         <div relative z-2>
           <div class="font-acorn text-6xl sm:text-7xl lg:text-8xl flex-col gap-y-1">
             <div relative lg:ml20>

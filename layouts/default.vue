@@ -5,8 +5,8 @@
       <slot />
     </main>
     <GoBack />
-    <!-- <WebLayoutFooter2 /> -->
-    <Gradient />
+    <WebLayoutFooter />
+    <!-- <Gradient /> -->
     <SpotifyRecentPlay />
   </div>
 </template>
