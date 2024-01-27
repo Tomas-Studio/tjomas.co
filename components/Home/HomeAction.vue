@@ -1,6 +1,6 @@
 <template>
   <div my20 web-w>
-    <div>
+    <div fyc>
       <h2 class="text-3xl font-acorn">
         let's work together
       </h2>

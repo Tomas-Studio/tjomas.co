@@ -3,5 +3,5 @@
 </script>
 
 <template>
-  <footer py20 bg-brand-green />
+  <footer py20 />
 </template>

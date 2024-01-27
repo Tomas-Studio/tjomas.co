@@ -9,7 +9,8 @@ useHead({ title: 'Articles' })
         Articles
       </h1>
       <p mt1 sm:text-lg>
-        I express my insights on technical concepts, share updates in the SWE world, recommend resources that have helped me, share things I have learnt and still exploring as Software Engineer
+        Infrequent thoughts on code, SWE updates, resources, learnings and more ....
+        <!-- I express my insights on technical concepts, share updates in the SWE world, recommend resources that have helped me, share things I have learnt and still exploring as Software Engineer -->
       </p>
     </div>
   </div>

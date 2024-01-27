@@ -11,31 +11,33 @@ html.dark {
   --uno: bg-brand-green/70 text-gray-9;
 }
 
-::-webkit-scrollbar {
-  /* Total width including `border-width` of scrollbar thumb */
-  --uno: h-8px w-8px;
+/* For Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(15 157 88 / 0.7) transparent;
 }
-::-webkit-scrollbar:hover {
-  --uno: h-10px w-10px;
+
+/* For Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  --uno: w-17px;
 }
-::-webkit-scrollbar-thumb {
-  --uno: bg-brand-green h-1em border-8 border-transparent;
-  /* Transparent border together with `background-clip: padding-box` does the trick */
-  background-clip: padding-box;
-  -webkit-border-radius: 5px;
-  -webkit-box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0);
-}
-::-webkit-scrollbar-thumb:hover {
-  --uno: h-1em border-6 border-transparent;
-  background-clip: padding-box;
-  -webkit-border-radius: 5px;
-  -webkit-box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0);
-}
-::-webkit-scrollbar-button {
-  --uno: h0 w0 hidden;
-}
-::-webkit-scrollbar-corner {
+
+*::-webkit-scrollbar-track {
   --uno: bg-transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  --uno: bg-brand-green/70 rounded-8px bg-clip-padding;
+  --uno: border-6 border-solid border-transparent;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  --uno: bg-brand-green;
+}
+
+*::-webkit-scrollbar-button, 
+*::-webkit-scrollbar-corner  {
+  --uno: hidden;
 }
 
 ::view-transition-old(root),
