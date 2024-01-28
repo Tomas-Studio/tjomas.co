@@ -18,25 +18,25 @@ html.dark {
 }
 
 /* For Chrome, Edge, and Safari */
-*::-webkit-scrollbar {
-  --uno: w-17px;
+::-webkit-scrollbar {
+  --uno: w-19px;
 }
 
-*::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
   --uno: bg-transparent;
 }
 
-*::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
   --uno: bg-brand-green/70 rounded-8px bg-clip-padding;
-  --uno: border-6 border-solid border-transparent;
+  --uno: border-8 border-solid border-transparent;
 }
 
-*::-webkit-scrollbar-thumb:hover {
+::-webkit-scrollbar-thumb:hover {
   --uno: bg-brand-green;
 }
 
-*::-webkit-scrollbar-button, 
-*::-webkit-scrollbar-corner  {
+::-webkit-scrollbar-button, 
+::-webkit-scrollbar-corner  {
   --uno: hidden;
 }
 

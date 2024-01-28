@@ -17,6 +17,10 @@ const cardTransform = computed(() => {
 
   return `perspective(${width.value}px) rotateX(${rX}deg) rotateY(${rY}deg)`
 })
+
+const CONVERTING = 'Converting'.split('')
+const DESIGNS = 'Designs'.split('')
+const PRODUCTS = 'Products'.split('')
 </script>
 
 <template>
@@ -27,13 +31,14 @@ const cardTransform = computed(() => {
         <div relative z-2>
           <div class="font-acorn text-6xl sm:text-7xl lg:text-8xl flex-col gap-y-1">
             <div relative lg:ml20>
-              Converting
+              <span v-for="letter, idx of CONVERTING" :key="idx" :style="{ animationDelay: `${(idx + 2) / 10}s` }" class="op0 inline-block animate-[1s_ease_0s_forwards_intro]">{{ letter }}</span>
             </div>
             <div wmax relative>
-              Designs <span text-2xl text-brand-yellow absolute right--10 lg:right--16 top-3.5 lg:top-8>to</span>
+              <span v-for="letter, idx of DESIGNS" :key="idx" :style="{ animationDelay: `${(idx + 4) / 10}s` }" class="op0 inline-block animate-[1s_ease_0s_forwards_intro]">{{ letter }}</span>
+              <span class="text-2xl sm:text-3xl text-brand-yellow absolute right--10 lg:right--16 top-3.5 lg:top-8 op0 animate-[1s_ease_1.5s_forwards_intro-to]">to</span>
             </div>
             <div relative lg:ml20>
-              Products
+              <span v-for="letter, idx of PRODUCTS" :key="idx" :style="{ animationDelay: `${(idx + 6) / 10}s` }" class="op0 inline-block animate-[1s_ease_0s_forwards_intro]">{{ letter }}</span>
             </div>
           </div>
         </div>

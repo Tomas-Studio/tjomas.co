@@ -11,7 +11,7 @@ export default defineNuxtConfig({
     '@vueuse/motion/nuxt',
   ],
   colorMode: { classSuffix: '', preference: 'dark', storageKey: 'site-color-mode' },
-  css: ['~/styles/base.css', '~/styles/overrides.css', '~/styles/font.css'],
+  css: ['~/styles/base.css', '~/styles/overrides.css', '~/styles/font.css', '~/styles/animation.css'],
   content: {
     documentDriven: true,
     markdown: { remarkPlugins: ['remark-reading-time'] },

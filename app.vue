@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import '@unocss/reset/normalize.css'
+import '@unocss/reset/tailwind.css'
 import FloatingVue from 'floating-vue'
 
 useHead({
