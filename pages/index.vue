@@ -2,5 +2,5 @@
   <HomeIntro />
   <HomeProject />
   <HomeArticle />
-  <HomeNext />
+  <HomeAction />
 </template>

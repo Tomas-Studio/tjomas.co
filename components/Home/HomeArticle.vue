@@ -4,9 +4,9 @@ const list = ['Nuxt', 'Scala', 'Optimization']
 
 <template>
   <div block web-w mt12 lg:mt20>
-    <div fyc mb6>
-      <div i-ic-baseline-edit text-base mr1 />
-      <h3 uppercase text-sm fw600 tracking-wide>
+    <div fyc mb10>
+      <!-- <div i-ic-baseline-edit text-base mr1 /> -->
+      <h3 uppercase text-sm fw700 tracking-wide>
         Featured Articles
       </h3>
     </div>
@@ -69,7 +69,6 @@ const list = ['Nuxt', 'Scala', 'Optimization']
     --uno: translate-x-0;
   }
 }
-
 .home-article:nth-child(3n-2) {
 
   & .a-tags {
