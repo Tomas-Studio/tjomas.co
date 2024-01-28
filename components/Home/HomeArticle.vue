@@ -17,7 +17,7 @@ const list = ['Nuxt', 'Scala', 'Optimization']
           <div border-b border-dashed w-10 border-gray-8 dark:border-gray-3 mx3 />
           <span>Jan 20, 2030</span>
         </div>
-        <h2 text-2xl md:text-3xl>
+        <h2 text-2xl>
           Digital discoveries: how VR is reshaping the travel industry
         </h2>
         <span class="a-link">
