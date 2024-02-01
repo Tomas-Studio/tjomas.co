@@ -4,9 +4,7 @@
     <main flex-1 pt20>
       <slot />
     </main>
-    <GoBack />
     <WebLayoutFooter />
-    <!-- <Gradient /> -->
     <SpotifyRecentPlay />
   </div>
 </template>

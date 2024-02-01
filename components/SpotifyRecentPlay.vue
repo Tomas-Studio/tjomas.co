@@ -19,8 +19,8 @@ const enter = ref({ width: 180, opacity: 1, marginLeft: 4 })
 <template>
   <div
     v-if="track"
-    bg-brand-green fixed bottom-4 left-2 sm:left-5
-    wmax p1.5 rounded-full fyc
+    bg-brand-green fixed bottom-6 left-2 sm:left-6
+    wmax p1.5 rounded-full fyc z-40
     transition-all duration-300
     @mouseenter="show = true"
     @mouseleave="show = false"

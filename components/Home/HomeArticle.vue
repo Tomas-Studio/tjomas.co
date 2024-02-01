@@ -12,7 +12,7 @@ const list = ['Nuxt', 'Scala', 'Optimization']
     </div>
     <div>
       <NuxtLink v-for="count in 3" :key="count" to="/articles" class="home-article" aria-label="go to article on ">
-        <div fyc mb3 text-sm>
+        <div fyc mb1.5 text-sm>
           <span class="a-tags">{{ list.join(' • ') }}</span>
           <div border-b border-dashed w-10 border-gray-8 dark:border-gray-3 mx3 />
           <span>Jan 20, 2030</span>
@@ -32,7 +32,7 @@ const list = ['Nuxt', 'Scala', 'Optimization']
 .home-article {
   --uno: mb12 block;
   & .a-tags {
-    --uno: block fw500 text-brand-yellow;
+    --uno: block fw500 uppercase text-xs tracking-tight;
   }
 
   & .a-link {

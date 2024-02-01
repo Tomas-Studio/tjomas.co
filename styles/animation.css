@@ -1,0 +1,21 @@
+@keyframes intro {
+  from {
+    opacity: 0%;
+    transform: translateY(8px) rotate(2deg);
+  }
+  to {
+    opacity: 100%;
+    transform: translateY(0) rotate(0deg);
+  }
+}
+@keyframes intro-to {
+  from {
+    opacity: 0%;
+    transform: translateX(16px);
+  }
+  to {
+    opacity: 100%;
+    transform: translateX(0);
+  }
+}
+

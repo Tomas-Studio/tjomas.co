@@ -7,11 +7,11 @@ const projects = [
 </script>
 
 <template>
-  <div web-w mt30 lg:mt40>
+  <div web-w mt20 lg:mt30>
     <div fyc mb10>
       <!-- <div i-ic-outline-work text-base mr1 /> -->
       <h3 uppercase text-sm fw700 tracking-wide>
-        Selected Projects
+        Featured Projects
       </h3>
     </div>
     <div>
