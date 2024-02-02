@@ -48,7 +48,7 @@ const projects = [
 .home-project {
   --uno: relative mb12 focus-visible:outline-none;
   & .p-title {
-    --uno: text-3xl;
+    --uno: text-2xl;
   }
 }
 .home-project:nth-child(3n-2) {
