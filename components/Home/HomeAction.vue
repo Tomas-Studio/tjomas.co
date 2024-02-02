@@ -1,5 +1,5 @@
 <template>
-  <div my16 web-w>
+  <div my20 web-w>
     <div flex flex-col md:flex-row py8 md:py14 md:gap-4 bg-dark dark:bg-gray-3 px5>
       <h2 class="text-3xl text-gray-3 dark:text-gray-8 font-acorn">
         let's work together
