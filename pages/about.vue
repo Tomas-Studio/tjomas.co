@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+definePageMeta({ documentDriven: false })
 useHead({ title: 'Me' })
 </script>
 

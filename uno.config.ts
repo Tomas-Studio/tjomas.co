@@ -6,6 +6,7 @@ import {
   presetUno,
   presetWebFonts,
   transformerDirectives,
+  transformerVariantGroup,
 } from 'unocss'
 import extractorMdc from '@unocss/extractor-mdc'
 
@@ -69,5 +70,6 @@ export default defineConfig({
   },
   transformers: [
     transformerDirectives(),
+    transformerVariantGroup(),
   ],
 })
