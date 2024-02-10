@@ -1,3 +1,3 @@
 <template>
-  <code fw300 font-mono bg-neutral-1 dark:bg-neutral-9 px1.5 text-sm border border-neutral-3 dark:border-neutral-8><slot /></code>
+  <code fw300 font-mono px1 text-sm class="bg-brand-green/10 text-brand-green/80"><slot /></code>
 </template>

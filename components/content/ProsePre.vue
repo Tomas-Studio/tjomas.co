@@ -9,7 +9,7 @@ type Props = {
   meta: string | null
   class: string | null
   highlights?: () => Array<number>
-  style: string | object | null
+  style?: string | object | null
 }
 
 const props = withDefaults(defineProps<Props>(), { code: '', filename: null, language: '', meta: null, class: null, highlights: () => [], style: null })
@@ -38,7 +38,7 @@ const { copy, copied } = useClipboard()
 
 <template>
   <div relative>
-    <div class="[&>pre]:(px4 pt10 pb2) focus-visible:( [&>pre]:(outline-1 outline-brand-green outline-dashed)) [&>code]:( [&>pre]:(font-mono text-3.75)) border border-neutral-3 dark:border-neutral-8 my8 rounded-sm" v-html="highlight" />
+    <div class="[&>pre]:(px4 pt10 pb2) focus-visible:( [&>pre]:(outline-1 outline-brand-green outline-dashed)) [&>code]:( [&>pre]:(font-mono text-sm)) border-neutral-3 dark:border-neutral-8 my8 rounded-sm" v-html="highlight" />
     <span class="absolute left-3 top-1.5 text-(3.75 neutral-5) fw500 tracking-wide">
       {{ props.filename }}
     </span>
