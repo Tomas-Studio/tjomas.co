@@ -59,3 +59,9 @@ For more information about contracts, read this section about API contracts in t
 
 Now that you have the OpenAPI spec, you can create an API route to return it in JSON format. The following code snippet shows you how to do it using the "Pages" router, but you can adapt it for the "App" router.
 
+### How to generate OpenAPI
+
+> Note: The code is extracted from the Documenso project, which uses both the "Pages" and "App" routes for APIs. Feel free to adjust the code so it works with your code
+
+Read more of my [articles](/articles)
+

@@ -23,7 +23,7 @@ const refinedSrc = computed(() => {
 <template>
   <figure py>
     <NuxtImg :src="refinedSrc" :alt="props.alt" :width="props.width" :height="props.height" />
-    <figcaption class="text-(center 3.75) fw400 text-gray-5 mt2">
+    <figcaption class="text-(center 3.75 gray-5) fw400 mt2">
       {{ props.alt }}
     </figcaption>
   </figure>

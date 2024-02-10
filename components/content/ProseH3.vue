@@ -2,11 +2,11 @@
 const props = defineProps<{ id?: string }>()
 
 const { headings } = useRuntimeConfig().public.mdc
-const generate = computed(() => props.id && headings?.anchorLinks?.h2)
+const generate = computed(() => props.id && headings?.anchorLinks?.h3)
 </script>
 
 <template>
-  <h2 :id="id" class="font-acorn text-2xl mt8 mb4">
+  <h3 :id="id" class="font-acorn text-xl mt8 mb4">
     <a
       v-if="id && generate"
       :href="`#${id}`"
@@ -16,5 +16,5 @@ const generate = computed(() => props.id && headings?.anchorLinks?.h2)
       <slot />
     </a>
     <slot v-else />
-  </h2>
+  </h3>
 </template>

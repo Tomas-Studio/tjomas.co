@@ -58,7 +58,7 @@ html.dark {
   z-index: 1;
 }
 
-/* for shiki to react to site theme */
+/* to make shiki highlighter responsive to site theme */
 html.dark .shiki,
 html.dark .shiki span {
   color: var(--shiki-dark) !important;

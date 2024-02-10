@@ -36,8 +36,8 @@ const highlight = computed(() => {
 
 <template>
   <div relative>
-    <div class="[&>pre]:p4 [&>code]:( [&>pre]:(font-mono text-3.75)) border border-neutral-3 dark:border-neutral-8 my8" v-html="highlight" />
-    <span absolute left-3 top-1.5 text-3.75 text-gray-5 fw500 tracking-wide>
+    <div class="[&>pre]:(px4 pt10 pb2) [&>code]:( [&>pre]:(font-mono text-3.75)) border border-neutral-3 dark:border-neutral-8 my8" v-html="highlight" />
+    <span class="absolute left-3 top-1.5 text-(3.75 gray-5) fw500 tracking-wide">
       {{ props.filename }}
     </span>
   </div>
