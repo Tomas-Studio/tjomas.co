@@ -16,7 +16,7 @@ const props = withDefaults(defineProps<Props>(), { code: '', filename: null, lan
 
 const highlighter = await getHighlighter({
   themes: ['vitesse-dark', 'catppuccin-latte'],
-  langs: ['css', 'js', 'vue', 'ts'],
+  langs: ['css', 'js', 'vue', 'ts', 'text', 'scala'],
 })
 
 const highlight = computed(() => {
@@ -32,13 +32,24 @@ const highlight = computed(() => {
     ],
   })
 })
+
+const { copy, copied } = useClipboard()
 </script>
 
 <template>
   <div relative>
-    <div class="[&>pre]:(px4 pt10 pb2) [&>code]:( [&>pre]:(font-mono text-3.75)) border border-neutral-3 dark:border-neutral-8 my8" v-html="highlight" />
-    <span class="absolute left-3 top-1.5 text-(3.75 gray-5) fw500 tracking-wide">
+    <div class="[&>pre]:(px4 pt10 pb2) focus-visible:( [&>pre]:(outline-1 outline-brand-green outline-dashed)) [&>code]:( [&>pre]:(font-mono text-3.75)) border border-neutral-3 dark:border-neutral-8 my8 rounded-sm" v-html="highlight" />
+    <span class="absolute left-3 top-1.5 text-(3.75 neutral-5) fw500 tracking-wide">
       {{ props.filename }}
     </span>
+    <button
+      class="absolute right-0 top-0 p2 text-base text-neutral-4 hover:text-neutral-6 dark:text-neutral-6 dark:hover:text-neutral-4 duration-300"
+      focus-visible:text-neutral-6 dark:focus-visible:text-neutral-3 focusable
+      aria-label="Copy code"
+      @click="copy(props.code)"
+    >
+      <div v-if="!copied" i-solar-copy-line-duotone />
+      <div v-else i-solar-copy-bold-duotone />
+    </button>
   </div>
 </template>

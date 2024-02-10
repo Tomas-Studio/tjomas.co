@@ -33,7 +33,7 @@ The first step is to generate the OpenAPI Specification. It's important to menti
 
 With `ts-rest` you can seamlessly generate an OpenAPI Specification as follows:
 
-``` ts [/api/trpc/contract.ts]
+``` ts [/server/contract.ts]
 import { generateOpenApi } from '@ts-rest/open-api'
 
 import { ApiContractV1 } from './contract'

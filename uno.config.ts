@@ -16,7 +16,7 @@ export default defineConfig({
     'navigation': 'flex gap-x-1 sm:gap-x-2 wfull px5 lg:px6',
     'ww': 'lt-lg:px5 max-w-2xl',
     'web-w': 'ww wfull mxauto',
-    'focusable': 'focus-visible:(outline-1 outline-brand outline-dashed)',
+    'focusable': 'focus-visible:(outline-1 outline-brand-green outline-dashed)',
     'profile-link': 'px3 py3.5 sm:py3 fcc text-inherit hover:text-brand-green focusable duration-300',
     'fcc': 'flex items-center justify-center',
     'fyc': 'flex items-center',
