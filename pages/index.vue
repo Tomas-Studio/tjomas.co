@@ -1,5 +1,6 @@
 <template>
   <HomeIntro />
+  <HomeStatement />
   <HomeProject />
   <HomeArticle />
   <HomeAction />

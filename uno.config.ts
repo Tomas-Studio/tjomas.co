@@ -6,6 +6,7 @@ import {
   presetUno,
   presetWebFonts,
   transformerDirectives,
+  transformerVariantGroup,
 } from 'unocss'
 import extractorMdc from '@unocss/extractor-mdc'
 
@@ -21,6 +22,7 @@ export default defineConfig({
     'fyc': 'flex items-center',
     'fxc': 'flex justify-center',
     'logo-st': 'font-logo fc font-italic py1 px2 text-6 sm:text-7 text-brand dark:(text-brand-dark active:text-brand-active) focusable hover:text-brand duration-400',
+    'contact-link': 'text-lg text-gray-3 dark:text-gray-8 underline underline-1px underline-offset-3 underline-gray-3/20 hover:underline-gray-3/70 focus-visible:outline-none focus-visible:underline-gray-3/70 focus-visible:dark:underline-gray-8/70 dark:underline-gray-8/20 dark:hover:underline-gray-8/70',
   },
   rules: [
     ['gradient-3', { background: 'radial-gradient(circle at top center,rgba(15, 157,88,.3) 0,transparent 50%,transparent 100%)' }],
@@ -49,7 +51,7 @@ export default defineConfig({
       provider: 'google',
       fonts: {
         sans: 'Urbanist:300,400,500,600,700,800,900',
-        mono: 'DM Mono',
+        mono: 'Overpass Mono:300,400',
         secondary: [
           { name: 'Libre Baskerville', weights: ['400'], italic: true },
           { name: 'serif', provider: 'none' },
@@ -61,12 +63,13 @@ export default defineConfig({
   extractors: [
     extractorMdc(),
   ],
-  content: {
-    filesystem: [
-      './content/**/*.md',
-    ],
-  },
+  // content: {
+  //   filesystem: [
+  //     './content/**/*.md',
+  //   ],
+  // },
   transformers: [
     transformerDirectives(),
+    transformerVariantGroup(),
   ],
 })

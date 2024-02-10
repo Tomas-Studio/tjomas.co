@@ -15,8 +15,6 @@ export default defineNuxtConfig({
   content: {
     documentDriven: true,
     markdown: { remarkPlugins: ['remark-reading-time'] },
-    // @ts-expect-error recent theme exclude in type
-    highlight: { theme: 'vitesse-black' },
   },
   runtimeConfig: {
     spotifyClientSecret: process.env.NUXT_PUBLIC_SPOTIFY_CLIENT_SECRET,
