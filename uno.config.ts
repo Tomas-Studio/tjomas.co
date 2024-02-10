@@ -51,7 +51,7 @@ export default defineConfig({
       provider: 'google',
       fonts: {
         sans: 'Urbanist:300,400,500,600,700,800,900',
-        mono: 'DM Mono',
+        mono: 'Overpass Mono:300,400',
         secondary: [
           { name: 'Libre Baskerville', weights: ['400'], italic: true },
           { name: 'serif', provider: 'none' },
@@ -63,11 +63,11 @@ export default defineConfig({
   extractors: [
     extractorMdc(),
   ],
-  content: {
-    filesystem: [
-      './content/**/*.md',
-    ],
-  },
+  // content: {
+  //   filesystem: [
+  //     './content/**/*.md',
+  //   ],
+  // },
   transformers: [
     transformerDirectives(),
     transformerVariantGroup(),

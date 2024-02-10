@@ -4,8 +4,8 @@ import { joinURL, withLeadingSlash, withTrailingSlash } from 'ufo'
 type Props = {
   src: string
   alt: string
-  width: string
-  height: string
+  width?: string
+  height?: string
 }
 
 const props = withDefaults(defineProps<Props>(), { src: '', alt: '', width: undefined, height: undefined })
@@ -22,8 +22,8 @@ const refinedSrc = computed(() => {
 
 <template>
   <figure py>
-    <img :src="refinedSrc" :alt="props.alt" :width="props.width" :height="props.height">
-    <figcaption class="text-(center sm) fw400 text-gray-5 mt2">
+    <NuxtImg :src="refinedSrc" :alt="props.alt" :width="props.width" :height="props.height" />
+    <figcaption class="text-(center 3.75) fw400 text-gray-5 mt2">
       {{ props.alt }}
     </figcaption>
   </figure>

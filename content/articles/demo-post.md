@@ -29,8 +29,33 @@ Swagger UI generates an interactive web interface _(documentation)_ for the prov
 
 ## How to generate OpenAPI Specification
 
-The first step is to generate the OpenAPI Specification. It's important to mention that this post shows a Next.js API built with ts-rest.
+The first step is to generate the OpenAPI Specification. It's important to mention that this post shows a Next.js API built with ts-rest. 
 
-## Begineer guide 
+With `ts-rest` you can seamlessly generate an OpenAPI Specification as follows:
 
-judhdsv;j n i uehffffdnnfjds  dhfhdfdbfl
+``` ts [/api/trpc/contract.ts]
+import { generateOpenApi } from '@ts-rest/open-api'
+
+import { ApiContractV1 } from './contract'
+
+export const OpenAPIV1 = generateOpenApi(
+  ApiContractV1,
+  {
+    info: {
+      title: 'The title of the ', // [!code --]
+      title: 'The title of the API', // [!code ++]
+      version: '1.0.0',
+      description: 'The description of the API', // [!code highlight]
+    },
+  },
+)
+```
+
+You only need to provide an API contract and some information about your API.
+
+The API contract, `ApiContractV1`, describes the API structure, request and response formats, and how to authenticate your API calls, among others.
+
+For more information about contracts, read this section about API contracts in ts-rest.
+
+Now that you have the OpenAPI spec, you can create an API route to return it in JSON format. The following code snippet shows you how to do it using the "Pages" router, but you can adapt it for the "App" router.
+

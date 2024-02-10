@@ -26,6 +26,10 @@ useSeoMeta({
         <Tags :tags="article.tags" />
       </div> -->
     </div>
-    <ContentDoc />
+    <ContentDoc v-slot="{ doc }">
+      <article>
+        <ContentRenderer :value="doc" />
+      </article>
+    </ContentDoc>
   </div>
 </template>

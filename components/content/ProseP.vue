@@ -1,5 +1,5 @@
 <template>
-  <p mb4 dark:fw300>
+  <p mb4>
     <slot />
   </p>
 </template>
