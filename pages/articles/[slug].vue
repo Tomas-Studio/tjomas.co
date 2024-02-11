@@ -28,7 +28,7 @@ useSeoMeta({
     </div>
     <ContentDoc v-slot="{ doc }">
       <article>
-        <ContentRenderer :value="doc" />
+        <ContentRenderer :value="doc" class="slide-enter-content" />
       </article>
     </ContentDoc>
   </div>

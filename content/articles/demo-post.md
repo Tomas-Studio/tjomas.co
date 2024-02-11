@@ -63,5 +63,37 @@ Now that you have the OpenAPI spec, you can create an API route to return it in 
 
 > Note: The code is extracted from the Documenso project, which uses both the "Pages" and "App" routes for APIs. Feel free to adjust the code so it works with your code
 
+```css [base.css]
+@keyframes enter {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+[data-animate] {
+  --stagger: 0;
+  --delay: 120ms;
+  --start: 0ms;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  [data-animate] {
+    animation: enter 0.6s both;
+    animation-delay: calc(var(--stagger) * var(--delay) + var(--start));
+  }
+}
+
+[data-animation-controller='false'] [data-animate] {
+  animation: none;
+}
+
+```
+
 Read more of my [articles](/articles)
 

@@ -8,6 +8,7 @@
     transform: translateY(0) rotate(0deg);
   }
 }
+
 @keyframes intro-to {
   from {
     opacity: 0%;
@@ -16,6 +17,17 @@
   to {
     opacity: 100%;
     transform: translateX(0);
+  }
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
   }
 }
 
