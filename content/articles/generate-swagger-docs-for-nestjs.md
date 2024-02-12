@@ -28,7 +28,7 @@ On the other hand, Swagger Documentation _(Swagger UI is the correct name)_ is p
 Swagger UI generates an interactive web interface _(documentation)_ for the provided API, and it uses the OpenAPI Specification to do it.
 
 
-![The image shows the Swagger UI (documentation) for the public Documenso API.](/img/openapi.webp)
+![The image shows the Swagger UI (documentation) for the public Documenso API.](/post/openapi.webp)
 
 ## How to generate OpenAPI Specification
 
@@ -100,7 +100,7 @@ The `SwaggerUI` component takes the OpenAPI spec as a prop and then generates th
 
 If you access `http://localhost:3000/api/v1/openapi`, you should see the auto-generated API documentation.
 
-![The image shows the Swagger UI (documentation) for the public Documenso API.](/img/openapi.webp)
+![The image shows the Swagger UI (documentation) for the public Documenso API.](/post/openapi.webp)
 
 ## Generating OpenAPI Specification 
 
