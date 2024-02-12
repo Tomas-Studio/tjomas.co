@@ -10,7 +10,7 @@ const showToc = ref(false)
     @mouseleave="showToc = false"
   >
     <template v-if="toc?.links?.length && post.showToc">
-      <div class="duration-300 mb3" :class="[showToc || post.showTocAlways ? 'op100' : 'op50']" i-streamline-interface-content-book-2-library-content-books-book-shelf-stack />
+      <div v-tooltip.right="'Table of Content'" class="duration-300 mb3" :class="[showToc || post.showTocAlways ? 'op100' : 'op50']" i-streamline-interface-content-book-2-library-content-books-book-shelf-stack />
       <TocLinks :links="toc.links" class="duration-300" :class="[showToc || post.showTocAlways ? 'op100' : 'op0']" />
     </template>
   </div>
