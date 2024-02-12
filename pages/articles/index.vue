@@ -22,9 +22,9 @@ const query: QueryBuilderParams = { path: '/articles', sort: [{ dateModified: -1
 
     <div mt10>
       <ContentList v-slot="{ list }" :query="query">
-        <div v-for="item of list" :key="item._path">
-          {{ item.title }}
-        </div>
+        <pre v-for="item of list" :key="item._path">
+          {{ item }}
+        </pre>
       </ContentList>
     </div>
   </div>

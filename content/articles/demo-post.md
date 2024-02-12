@@ -8,7 +8,10 @@ tags:
   - api
   - nuxt
 featured: true
+showToc: true
 ---
+
+:toc
 
 This post teaches you how to generate Swagger documentation for your Next.js API. You also learn how to generate the OpenAPI Specification required by Swagger.
 <!--more-->
@@ -55,45 +58,57 @@ You only need to provide an API contract and some information about your API.
 
 The API contract, `ApiContractV1`, describes the API structure, request and response formats, and how to authenticate your API calls, among others.
 
-For more information about contracts, read this section about API contracts in ts-rest.
+_For more information about contracts, read this section about API contracts in ts-rest._
 
 Now that you have the OpenAPI spec, you can create an API route to return it in JSON format. The following code snippet shows you how to do it using the "Pages" router, but you can adapt it for the "App" router.
+
+```ts []
+import type { NextApiRequest, NextApiResponse } from 'next'
+
+import { OpenAPIV1 } from '@documenso/api/v1/openapi'
+
+export default function handler(req: NextApiRequest, res: NextApiResponse) {
+  res.status(200).json(OpenAPIV1)
+}
+```
+Considering that you placed the code in the `/pages/api/v1/openapi.json.ts` file, you should see a similar response to the image below if you access `http://localhost:3000/api/v1/openapi.json`.
 
 ### How to generate OpenAPI
 
 > Note: The code is extracted from the Documenso project, which uses both the "Pages" and "App" routes for APIs. Feel free to adjust the code so it works with your code
 
-```css [base.css]
-@keyframes enter {
-  0% {
-    opacity: 0;
-    transform: translateY(10px);
-  }
+## Generate Swagger Documentation from OpenAPI Specification
 
-  to {
-    opacity: 1;
-    transform: none;
-  }
+To generate the Swagger documentation, you need to install `swagger-ui-react` in your Next.js project.
+
+After that, you need to create a new API route to display the Swagger documentation. That can be done in the `app/api/v1/openapi/page.tsx` file as follows:
+
+```ts [app/api/v1/openapi/page.tsx]
+'use client'
+
+import SwaggerUI from 'swagger-ui-react'
+import 'swagger-ui-react/swagger-ui.css'
+
+import { OpenAPIV1 } from '@documenso/api/v1/openapi'
+
+export default function OpenApiDocsPage() {
+  return '<SwaggerUI spec={OpenAPIV1} displayOperationId={true} />'
 }
-
-[data-animate] {
-  --stagger: 0;
-  --delay: 120ms;
-  --start: 0ms;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  [data-animate] {
-    animation: enter 0.6s both;
-    animation-delay: calc(var(--stagger) * var(--delay) + var(--start));
-  }
-}
-
-[data-animation-controller='false'] [data-animate] {
-  animation: none;
-}
-
 ```
+
+The `SwaggerUI` component takes the OpenAPI spec as a prop and then generates the documentation from the it.
+
+If you access `http://localhost:3000/api/v1/openapi`, you should see the auto-generated API documentation.
+
+![The image shows the Swagger UI (documentation) for the public Documenso API.](/img/openapi.webp)
+
+## Generating OpenAPI Specification 
+
+You can interact with the documentation by clicking on any endpoint. Doing it opens a new section where you can see more information, such as parameters and responses. It even allows you to make requests.
+
+So, the auto-generated documentation is helpful for API users who want to explore and interact with the API before implementing it in their apps.
+
+> Note: The code is extracted from the Documenso project, which uses both the "Pages" and "App" routes for APIs. Feel free to adjust the code so it works with your code.
 
 Read more of my [articles](/articles)
 

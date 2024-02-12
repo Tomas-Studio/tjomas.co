@@ -5,7 +5,7 @@ import { transformerNotationDiff, transformerNotationHighlight } from '@shikijs/
 type Props = {
   code: string
   language: string
-  filename: string | null
+  filename?: string | null
   meta: string | null
   class: string | null
   highlights?: () => Array<number>
