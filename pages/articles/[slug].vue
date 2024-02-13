@@ -2,6 +2,9 @@
 import { formatDate } from '@vueuse/core'
 
 const { page: article } = useContent()
+const { contentNotFound } = useUtil()
+
+contentNotFound(article)
 
 useSeoMeta({
   title: article.value.title,
