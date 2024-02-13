@@ -43,8 +43,9 @@ const { copy, copied } = useClipboard()
       {{ props.filename }}
     </span>
     <button
-      class="absolute right-0 top-0 p2 text-base text-neutral-4 hover:text-neutral-6 dark:text-neutral-6 dark:hover:text-neutral-4 duration-300"
-      focus-visible:text-neutral-6 dark:focus-visible:text-neutral-3 focusable
+      v-tooltip.left="{ content: 'Copied', shown: copied, triggers: [] }"
+      class="absolute right-0 top-0 p2 text-base text-neutral-4 hover:text-neutral-6 dark:text-neutral-6 dark:hover:text-neutral-4 duration-300" focus-visible:text-neutral-6 dark:focus-visible:text-neutral-3
+      focusable
       aria-label="Copy code"
       @click="copy(props.code)"
     >
