@@ -6,6 +6,7 @@ datePublished: "2024-02-13"
 tags:
   - api
   - backend
+  - full-stack
 featured: true
 showToc: true
 showTocAlways: false

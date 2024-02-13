@@ -2,7 +2,7 @@ import type { Ref } from 'vue'
 
 /**
  * Utility functions
- * @returns
+ * @returns contentNotFound
  */
 export default function () {
   function contentNotFound(page: Ref<any>) {

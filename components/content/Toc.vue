@@ -5,7 +5,7 @@ const showToc = ref(false)
 
 <template>
   <div
-    class="lt-lg:hidden fixed top-24 left-8 h-80vh of-y-auto w-70 xl:w-75"
+    class="lt-lg:hidden fixed top-24 left-8 h-80vh of-y-auto w-60 xl:w-75"
     @mouseenter="showToc = true"
     @mouseleave="showToc = false"
     @focusin="showToc = true"
