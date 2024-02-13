@@ -9,7 +9,7 @@ withDefaults(defineProps<Props>(), { href: '', target: undefined })
 
 <template>
   <NuxtLink
-    class="underline underline-1px underline-offset-3 dark:underline-gray-3/30 dark:hover:underline-gray-3/70 focus-visible:outline-none focus-visible:dark:underline-gray-3/70 focus-visible:underline-gray-8/70 underline-gray-8/20 hover:underline-gray-8/70"
+    class="fw500 underline underline-1px underline-offset-3 underline-brand-green/50 hover:underline-brand-green focus-visible:(outline-none underline-1.5px underline-brand-green)"
     :href="href"
     :target="target"
   >

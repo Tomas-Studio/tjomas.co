@@ -23,6 +23,9 @@ useSeoMeta({
 onMounted(() => {
   // disable tooltip on mobile screens
   FloatingVue.options.themes.tooltip.disabled = window.innerWidth <= 640
+
+  // apply smooth scrolling
+  // window.scrollBy({ top: 200, left: 0, behavior: 'smooth' });
 })
 </script>
 

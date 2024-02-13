@@ -17,17 +17,14 @@ const query: QueryBuilderParams = { path: '/articles', sort: [{ dateModified: -1
       </h1>
       <p mt1 sm:text-lg>
         Infrequent thoughts on code, SWE updates, resources, learnings and more ....
-        <!-- I express my insights on technical concepts, share updates in the SWE world, recommend resources that have helped me, share things I have learnt and still exploring as Software Engineer -->
       </p>
     </div>
 
     <div mt10>
       <ContentList v-slot="{ list }" :query="query">
-        <div v-for="item of list" :key="item._path">
-          <pre>
-            {{ item }}
-          </pre>
-        </div>
+        <pre v-for="item of list" :key="item._path">
+          {{ item }}
+        </pre>
       </ContentList>
     </div>
   </div>
