@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const footerLinks = [
   { title: 'Email', link: '/' },
-  { title: 'Twitter', link: '/' },
+  { title: 'X (Twitter)', link: '/' },
   { title: 'Github', link: '/' },
   { title: 'Medium', link: '/' },
   { title: 'Read.CV', link: '/' },

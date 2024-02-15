@@ -1,7 +1,17 @@
 <script setup lang="ts">
 import { formatDate } from '@vueuse/core'
 
-const { page: article } = useContent()
+const { page: article, prev, next } = useContent()
+const { contentNotFound } = useUtil()
+
+contentNotFound(article)
+const url = useRequestURL()
+
+const shareLinks = computed(() => {
+  const rawXLink = `https://twitter.com/intent/tweet?text=I read "${article.value.title}". Have a look it at&url=${url}&via=TunjiOlakunle`
+  const shareOnX = encodeURI(rawXLink.replace(/#/g, 'No. '))
+  return { shareOnX, copyLink: url.href }
+})
 
 useSeoMeta({
   title: article.value.title,
@@ -22,14 +32,27 @@ useSeoMeta({
         <span>{{ article.readingTime.text }} </span> • <span> {{ formatDate(new Date(article.datePublished), 'MMM DD, YYYY') }}</span>
       </div>
       <div h1px w20 bg-brand-green mb />
-      <!-- <div flex gap-x-2.5 mb2>
-        <Tags :tags="article.tags" />
-      </div> -->
     </div>
     <ContentDoc v-slot="{ doc }">
       <article>
         <ContentRenderer :value="doc" class="slide-enter-content" />
       </article>
     </ContentDoc>
+    <div mt12>
+      <hr class="bg-brand-green/70 my10 h0.5px border-0">
+      <div flex flex-col lg:flex-row justify-between lg:items-center lt-lg:gap-y-4>
+        <Tags :tags="article.tags" />
+        <ShareArticle :links="shareLinks" />
+      </div>
+      <hr class="bg-brand-green/70 mt10 mb6 h0.5px border-0">
+      <div>
+        <span>More Articles</span>
+        <div w-full mt5 flex flex-col md:flex-row justify-between lt-md:gap-y-8 md:gap-x-5>
+          <InArticlePreview v-if="prev" :article="prev" />
+          <div v-if="prev && next" class="md:mx4 lt-md:h1px md:w1px bg-brand-green/70" />
+          <InArticlePreview v-if="next" :article="next" />
+        </div>
+      </div>
+    </div>
   </div>
 </template>
