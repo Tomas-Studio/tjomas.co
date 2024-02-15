@@ -1,5 +1,5 @@
 <template>
-  <p mb4>
+  <p mb5 leading-7>
     <slot />
   </p>
 </template>
