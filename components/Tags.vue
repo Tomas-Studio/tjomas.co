@@ -13,7 +13,7 @@ defineProps<Props>()
       :key="tag"
       :to="`/tag/${tag}`"
       :aria-label="`Link to ${tag} tag`"
-      class="px4 py1 rounded-md capitalize
+      class="px4 py1 rounded-md capitalize duration-300
       [&:nth-child(3n-1)]:bg-brand-yellow/10 [&:nth-child(3n-1)]:text-brand-yellow
       [&:nth-child(3n-2)]:bg-brand-green/10 [&:nth-child(3n-2)]:text-brand-green
       [&:nth-child(4n-1)]:bg-brand/10 [&:nth-child(4n-1)]:text-brand [&:nth-child(3n-1)]:hover:bg-brand-yellow/20
