@@ -1,6 +1,7 @@
 @font-face {
   font-display: swap;
   font-family: 'acorn';
+  font-optical-sizing: auto;
   font-style: normal;
   font-weight: 700;
   src: url('/acorn.woff') format('woff');
