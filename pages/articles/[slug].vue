@@ -38,7 +38,7 @@ useSeoMeta({
         <ContentRenderer :value="doc" class="slide-enter-content" />
       </article>
     </ContentDoc>
-    <div mt12>
+    <div mt12 mb20>
       <hr class="bg-brand-green/70 my10 h0.5px border-0">
       <div flex flex-col lg:flex-row justify-between lg:items-center lt-lg:gap-y-4>
         <Tags :tags="article.tags" />
