@@ -1,12 +1,10 @@
 <script lang="ts" setup>
-import type { QueryBuilderParams } from '@nuxt/content/dist/runtime/types'
-
 definePageMeta({
   documentDriven: false,
 })
 useHead({ title: 'Articles' })
 
-const query: QueryBuilderParams = { path: '/articles', sort: [{ dateModified: -1, datePublished: -1 }] }
+const articles = await queryContent('articles').sort({ dateModified: -1, datePublished: -1 }).find()
 </script>
 
 <template>
@@ -16,16 +14,12 @@ const query: QueryBuilderParams = { path: '/articles', sort: [{ dateModified: -1
         Articles
       </h1>
       <p mt1 sm:text-lg>
-        Infrequent thoughts on code, SWE updates, resources, learnings and more ....
+        Infrequent thoughts on code, SWE updates, resources, my learnings and more ....
       </p>
+      <div h1px w20 bg-brand-green mt />
     </div>
-
-    <div mt10>
-      <ContentList v-slot="{ list }" :query="query">
-        <pre v-for="item of list" :key="item._path">
-          {{ item }}
-        </pre>
-      </ContentList>
+    <div class="mt10 slide-enter-content">
+      <ArticleCard v-for="item of articles" :key="item._path" :article="item" />
     </div>
   </div>
 </template>
