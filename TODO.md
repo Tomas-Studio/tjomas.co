@@ -7,4 +7,8 @@
 - [ ] Add About me
 - [ ] Add Custom Error Page
 - [ ] Add content on project page 
-- [ ]
+- [ ] Create Tag content
+- [ ] Add Tag page
+- [ ] Write 2 real article
+- [ ] Get domain from Namecheap or competitors 
+- [ ] Work on the withGsap site and deploy 
