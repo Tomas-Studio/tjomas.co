@@ -6,5 +6,5 @@
 - [ ] Add Og Image to every page
 - [ ] Add About me
 - [ ] Add Custom Error Page
-- [ ]
+- [ ] Add content on project page 
 - [ ]
