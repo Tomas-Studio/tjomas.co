@@ -38,6 +38,7 @@
     "floating-vue": "2.0.0-beta.24",
     "lint-staged": "^15.2.0",
     "nuxt": "^3.9.0",
+    "nuxt-og-image": "3.0.0-rc.38",
     "rehype-shiki": "^0.0.9",
     "remark-reading-time": "^2.0.1",
     "simple-git-hooks": "^2.9.0",
