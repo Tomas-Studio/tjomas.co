@@ -9,7 +9,7 @@ withDefaults(defineProps<Props>(), { article: null })
 </script>
 
 <template>
-  <NuxtLink :to="article._path" class="md:w-1/2 group">
+  <NuxtLink :aria-label="`Open this acticle on ${article.title}`" :to="article._path" class="md:w-1/2 group focus-visible:outline-none">
     <h3 class="font-acorn text-lg mb4">
       {{ article.title }}
     </h3>
@@ -17,7 +17,7 @@ withDefaults(defineProps<Props>(), { article: null })
       <div text-3.75 op80 dark:op60>
         <span>{{ article.readingTime.text }} </span> • <span> {{ formatDate(new Date(article.datePublished), 'MMM DD, YYYY') }}</span>
       </div>
-      <div text-lg group-hover:text-brand-green i-ri-arrow-right-double-line />
+      <div aria-hidden="true" text-lg group-focus-visible:text-brand-green group-hover:text-brand-green i-ri-arrow-right-double-line />
       <!-- <div group-hover:bg-brand-green h1px flex-1 mt1 bg-gray-5 duration-300 /> -->
     </div>
   </NuxtLink>

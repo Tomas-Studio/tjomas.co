@@ -13,11 +13,10 @@ defineProps<Props>()
       :key="tag"
       :to="`/tag/${tag}`"
       :aria-label="`Link to ${tag} tag`"
-      class="px4 py1 rounded-md capitalize duration-300
-      [&:nth-child(3n-1)]:bg-brand-yellow/10 [&:nth-child(3n-1)]:text-brand-yellow
-      [&:nth-child(3n-2)]:bg-brand-green/10 [&:nth-child(3n-2)]:text-brand-green
-      [&:nth-child(4n-1)]:bg-brand/10 [&:nth-child(4n-1)]:text-brand [&:nth-child(3n-1)]:hover:bg-brand-yellow/20
-      [&:nth-child(4n-1)]:hover:bg-brand/20 [&:nth-child(3n-2)]:hover:bg-brand-green/20
+      class="px4 py1 capitalize duration-300 focus-visible:(outline-1 outline-dashed)
+      [&:nth-child(3n-1)]:(bg-brand-yellow/10 text-brand-yellow hover:bg-brand-yellow/20 outline-brand-yellow)
+      [&:nth-child(3n-2)]:(bg-brand-green/10 text-brand-green hover:bg-brand-green/20 outline-brand-green)
+      [&:nth-child(4n-1)]:(bg-brand/10 text-brand hover:bg-brand/20 outline-brand)
       "
     >
       <p text-sm>

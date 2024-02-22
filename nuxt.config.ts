@@ -9,6 +9,7 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxt/content',
     '@vueuse/motion/nuxt',
+    'nuxt-og-image',
   ],
   colorMode: { classSuffix: '', preference: 'dark', storageKey: 'site-color-mode' },
   css: ['~/styles/base.css', '~/styles/overrides.css', '~/styles/font.css', '~/styles/animation.css'],
