@@ -1,16 +1,16 @@
 <script setup lang="ts">
-defineOptions({
-  inheritAttrs: false,
-})
-
-withDefaults(defineProps<Props>(), { title: 'Article', description: undefined, date: undefined, tags: undefined })
-
 type Props = {
   title?: string
   description?: string
   date?: string
   tags?: Array<string>
 }
+
+defineOptions({
+  inheritAttrs: false,
+})
+
+withDefaults(defineProps<Props>(), { title: 'Article', description: undefined, date: undefined, tags: undefined })
 </script>
 
 <template>
