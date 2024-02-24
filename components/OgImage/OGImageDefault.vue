@@ -13,11 +13,11 @@ withDefaults(defineProps<Props>(), { title: 'Tunji Olakunle', description: 'I co
       <div class="text-8xl">
         TO
       </div>
-      <div>
+      <div class="flex-1">
         <p class="mt--1px text-xl" style="font-family: 'acorn'">
           {{ title }}
         </p>
-        <p class="mt--2.5 text-lg" style="font-family: 'Urbanist'">
+        <p class="mt--2.5 text-(lg balance) w-60%" style="font-family: 'Urbanist'">
           {{ description }}
         </p>
       </div>
