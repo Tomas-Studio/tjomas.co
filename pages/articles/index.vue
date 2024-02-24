@@ -4,6 +4,12 @@ definePageMeta({
 })
 useHead({ title: 'Articles' })
 
+defineOgImage({
+  component: 'OGImageDefault',
+  props: { title: 'Articles', description: 'Infrequent thoughts on code, SWE updates, resources, my learnings and more ....' },
+  fonts: ['Luckiest+Guy:400', { name: 'acorn', weight: 700, path: '/acorn.woff' }, 'Urbanist:400'],
+})
+
 const articles = await queryContent('articles').sort({ dateModified: -1, datePublished: -1 }).find()
 </script>
 
