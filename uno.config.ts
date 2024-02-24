@@ -33,7 +33,6 @@ export default defineConfig({
     colors: {
       dark: '#050505',
       brand: {
-        // DEFAULT: '#0F9D58',
         DEFAULT: '#4285F4',
         dark: '#3569BE',
         active: '#294F8E',
@@ -55,6 +54,10 @@ export default defineConfig({
         secondary: [
           { name: 'Libre Baskerville', weights: ['400'], italic: true },
           { name: 'serif', provider: 'none' },
+        ],
+        logo: [
+          { name: 'Luckiest Guy', weights: ['400'] },
+          { name: 'cursive', provider: 'none' },
         ],
       },
     }),

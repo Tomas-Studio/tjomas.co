@@ -1,11 +1,10 @@
 <script setup lang="ts">
-import { formatDate } from '@vueuse/core'
-
 const { page: article, prev, next } = useContent()
 const { contentNotFound } = useUtil()
 
 contentNotFound(article)
 const url = useRequestURL()
+const publishedDate = useDateFormat(article.datePublished, 'MMM DD, YYYY')
 
 const shareLinks = computed(() => {
   const rawXLink = `https://twitter.com/intent/tweet?text=I read "${article.value.title}". Have a look it at&url=${url}&via=TunjiOlakunle`
@@ -18,6 +17,19 @@ useSeoMeta({
   description: article.value.description,
   ogTitle: article.value.title,
   ogDescription: article.value.description,
+  twitterTitle: article.value.title,
+  twitterDescription: article.value.description,
+})
+
+defineOgImage({
+  component: 'OGImageArticle',
+  props: {
+    title: article.value.title,
+    description: article.value.description,
+    date: publishedDate.value,
+    tags: article.value.tags,
+  },
+  fonts: ['Luckiest+Guy:400', { name: 'acorn', weight: 700, path: '/acorn.woff' }, 'Urbanist:400'],
 })
 </script>
 
@@ -29,7 +41,8 @@ useSeoMeta({
         {{ article.title }}
       </h1>
       <div text-gray-5 text-3.75 mb>
-        <span>{{ article.readingTime.text }} </span> • <span> {{ formatDate(new Date(article.datePublished), 'MMM DD, YYYY') }}</span>
+        <span>{{ article.readingTime.text }} </span> •
+        <span> {{ publishedDate }}</span>
       </div>
       <div h1px w20 bg-brand-green mb />
     </div>
