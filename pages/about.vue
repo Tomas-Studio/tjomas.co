@@ -1,6 +1,11 @@
 <script lang="ts" setup>
 definePageMeta({ documentDriven: false })
-useHead({ title: 'Me' })
+useHead({ title: 'About' })
+defineOgImage({
+  component: 'OGImageDefault',
+  props: { title: 'About Me', description: 'What about Me' },
+  fonts: ['Luckiest+Guy:400', { name: 'acorn', weight: 700, path: '/acorn.woff' }, 'Urbanist:400'],
+})
 </script>
 
 <template>

@@ -18,7 +18,6 @@ withDefaults(defineProps<Props>(), { article: null })
         <span>{{ article.readingTime.text }} </span> • <span> {{ formatDate(new Date(article.datePublished), 'MMM DD, YYYY') }}</span>
       </div>
       <div aria-hidden="true" text-lg group-focus-visible:text-brand-green group-hover:text-brand-green i-ri-arrow-right-double-line />
-      <!-- <div group-hover:bg-brand-green h1px flex-1 mt1 bg-gray-5 duration-300 /> -->
     </div>
   </NuxtLink>
 </template>

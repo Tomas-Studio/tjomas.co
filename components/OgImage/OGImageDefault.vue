@@ -1,53 +1,30 @@
-<script setup lang="ts">
+<script lang="ts" setup>
 type Props = {
-  title?: string
-  description?: string
-  date?: string
-  tags?: Array<string>
+  title: string
+  description: string
 }
 
-defineOptions({
-  inheritAttrs: false,
-})
-
-withDefaults(defineProps<Props>(), { title: 'Article', description: undefined, date: undefined, tags: undefined })
+withDefaults(defineProps<Props>(), { title: 'Tunji Olakunle', description: 'I convert Designs into Products' })
 </script>
 
 <template>
-  <div class="wfull hfull px12 pt20 pb16 relative flex-(~ col) justify-between text-gray-3" style="background: #050505;">
-    <div>
-      <p
-        style="background: rgba(244, 180, 0, 0.1); color: #F4B400; font-family: 'acorn'"
-        class="px2 py1 mb2 w-[62ch]"
-      >
-        Article
-      </p>
-      <h1
-        class="text-(5xl balance) w-70% font-acorn"
-        style="font-family: 'acorn'"
-      >
-        {{ title }}
-      </h1>
-      <div v-if="tags && tags?.length > 0" class="flex gap-x-4">
-        <div v-for="tag of tags" :key="tag" style="font-family: 'acorn'" class="flex items-center">
-          <div class="h3 w3 rounded-full mr1.50" style="background: #F4B400;" />
-          <span class="text-2xl capitalize">{{ tag }}</span>
-        </div>
+  <div class="wfull hfull px30 relative flex-(~ col) justify-center text-gray-3" style="background: #050505;">
+    <div class="flex gap-x-6">
+      <div class="text-8xl">
+        TO
       </div>
-    </div>
-    <div>
-      <div class="flex justify-between">
-        <div class="text-5xl">
-          TO
-        </div>
-        <p v-if="date" style="font-family: 'acorn'">
-          {{ date }}
+      <div class="flex-1">
+        <p class="mt--1px text-xl" style="font-family: 'acorn'">
+          {{ title }}
+        </p>
+        <p class="mt--2.5 text-(lg balance) w-60%" style="font-family: 'Urbanist'">
+          {{ description }}
         </p>
       </div>
-      <span style="font-family: 'acorn';">Tunji Olakunle</span>
     </div>
+
     <!-- svg patterns -->
-    <svg class="absolute inset-0 opacity-70" style="z-index: 0;" width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg class="absolute inset-0 opacity-80" style="z-index: 0;" width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M165.165 460.097C665.045 774.444 932.717 309.581 918.141 89.1189C903.565 -131.34 701.988 54.0219 229.207 -264.678C-5.12998 -422.28 -543.751 -34.9957 -529.152 185.807C-519.833 326.75 -379.035 310.245 -189.346 337.462C-81.376 352.603 41.2774 380.199 165.165 460.097Z" stroke="url(#paint0_linear_478_327)" stroke-opacity="0.6" stroke-width="0.5" stroke-miterlimit="10" />
       <path d="M253.011 -296.212C-18.3602 -425.405 -530.013 -54.3762 -514.515 180.017C-504.966 324.443 -367.006 331.248 -180.346 370.146C-63.9475 394.645 76.0485 423.818 211.397 491.726C726.056 747.075 976.158 317.568 960.661 83.175C951.203 -59.8718 860.843 -55.6582 684.504 -114.624C639.725 -129.318 584.825 -148.797 528.988 -171.418C423.425 -219.756 361.801 -244.206 253.011 -296.212Z" stroke="#0F9D58" stroke-width="0.5" stroke-miterlimit="10" />
       <path d="M241.66 -337.514C-103.895 -405.376 -551.492 -75.9573 -534.468 181.539C-524.622 330.451 -394.813 386.268 -215.436 445.381C-83.1503 488.912 81.5494 516.799 246.071 558.545C753.003 687.059 1028.73 337.499 1011.71 80.0029C1002.48 -59.6043 915.779 -101.995 758.671 -172.621C710.081 -194.336 657.576 -217.177 597.427 -239.514C493.439 -277.993 373.349 -311.253 241.66 -337.514Z" stroke="#0F9D58" stroke-width="0.5" stroke-miterlimit="10" />

@@ -4,7 +4,7 @@ const { contentNotFound } = useUtil()
 
 contentNotFound(article)
 const url = useRequestURL()
-const publishedDate = useDateFormat(article.datePublished, 'MMM DD, YYYY')
+const publishedDate = useDateFormat(article.value.datePublished, 'MMM DD, YYYY')
 
 const shareLinks = computed(() => {
   const rawXLink = `https://twitter.com/intent/tweet?text=I read "${article.value.title}". Have a look it at&url=${url}&via=TunjiOlakunle`
@@ -29,7 +29,7 @@ defineOgImage({
     date: publishedDate.value,
     tags: article.value.tags,
   },
-  fonts: ['Luckiest+Guy:400', { name: 'acorn', weight: 700, path: '/acorn.woff' }, 'Urbanist:400'],
+  fonts: ['Luckiest+Guy:400', { name: 'acorn', weight: 700, path: '/acorn.woff' }],
 })
 </script>
 
