@@ -1,7 +1,5 @@
 <script lang="ts" setup>
-definePageMeta({
-  documentDriven: false,
-})
+definePageMeta({ documentDriven: false })
 useHead({ title: 'Articles' })
 
 defineOgImage({
