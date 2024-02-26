@@ -10,7 +10,7 @@ My personal website, deployed at [https://tunjiolakunle.co](https://tunjiolakunl
 
 ## Security
 
-If you discover any security related issues, please email hello@tjomas.co or use the issue tracker.
+If you discover any security related issues, please email hello@tunjiolakunle.co or use the issue tracker.
 
 ## License
 
