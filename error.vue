@@ -16,8 +16,11 @@ useHead({
       <h1 class="font-acorn text-7xl md:text-8xl">
         {{ error?.statusCode }}
       </h1>
-      <p text-lg>
+      <p v-if="error?.statusCode === 404" text-lg>
         Whoops! Looks like the page you're looking for does not exist
+      </p>
+      <p v-if="error?.statusCode !== 404" text-lg>
+        Aa! Ok don't panic but it looks like something went wrong, refresh the page
       </p>
       <NuxtLink
         to="/"
