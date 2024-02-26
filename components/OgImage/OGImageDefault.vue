@@ -4,6 +4,10 @@ type Props = {
   description: string
 }
 
+defineOptions({
+  inheritAttrs: false,
+})
+
 withDefaults(defineProps<Props>(), { title: 'Tunji Olakunle', description: 'I convert Designs into Products' })
 </script>
 

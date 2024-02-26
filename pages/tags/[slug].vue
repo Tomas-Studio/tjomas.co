@@ -38,7 +38,7 @@ const articles = await queryContent('articles').where({ tags: { $contains: `${ta
         <div h1px w20 bg-brand-green mt />
       </div>
       <div class="mt8">
-        <div v-if="articles.length > 0">
+        <div v-if="articles.length > 0" class="slide-enter-content">
           <h2 class="uppercase text-(sm brand-yellow) fw700 tracking-wide mb6">
             Articles
           </h2>
