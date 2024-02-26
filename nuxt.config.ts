@@ -10,6 +10,7 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@vueuse/motion/nuxt',
     'nuxt-og-image',
+    '@nuxtjs/fontaine',
   ],
   colorMode: { classSuffix: '', preference: 'dark', storageKey: 'site-color-mode' },
   css: ['~/styles/base.css', '~/styles/overrides.css', '~/styles/font.css', '~/styles/animation.css'],

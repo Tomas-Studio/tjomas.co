@@ -19,7 +19,7 @@ const tags = await queryContent('tags').sort({ title: 1 }).find()
     <p mt1 mb7 sm:text-lg>
       Find articles and projects that interests you by tags
     </p>
-    <div class="flex flex-wrap gap-x-4">
+    <div class="flex flex-wrap gap-4">
       <NuxtLink
         v-for="tag of tags"
         :key="tag.title"
