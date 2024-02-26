@@ -11,7 +11,7 @@ defineProps<Props>()
     <NuxtLink
       v-for="tag of tags"
       :key="tag"
-      :to="`/tag/${tag}`"
+      :to="`/tags/${tag}`"
       :aria-label="`Link to ${tag} tag`"
       class="px4 py1 capitalize duration-300 focus-visible:(outline-1 outline-dashed)
       [&:nth-child(3n-1)]:(bg-brand-yellow/10 text-brand-yellow hover:bg-brand-yellow/20 outline-brand-yellow)
