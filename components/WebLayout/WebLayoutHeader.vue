@@ -5,6 +5,8 @@ const showNav = ref(true)
 
 onMounted(() => {
   useEventListener('scroll', () => {
+    if (scroll.value === 0)
+      showNav.value = true
     if (scroll.value <= 300 || scroll.value < lastScroll.value)
       showNav.value = true
     if (scroll.value > lastScroll.value)
