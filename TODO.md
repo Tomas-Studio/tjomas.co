@@ -12,6 +12,7 @@
 - [x] Add Tag page
 - [ ] Write 2 real article
 - [ ] Get domain from Namecheap or competitors 
-- [ ] Work on the withGsap site and deploy
+- [x] Work on the withGsap site and deploy
 - [ ] Work on the vue OTP input package
 - [ ] Change of Playlist of site
+- [x] Deploy on Vercel for Demo
