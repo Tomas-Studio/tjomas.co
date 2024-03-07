@@ -1,4 +1,4 @@
 ---
 title: 'Zod'
-description: 'TypeScript-first schema validation with static type inference'
+description: 'Zod is typeScript-first schema validation library with static type inference'
 ---
