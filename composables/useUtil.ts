@@ -1,8 +1,10 @@
 import type { Ref } from 'vue'
+import type { ParsedContent } from '@nuxt/content/dist/runtime/types/index.js'
 
 /**
  * Utility functions
  * @returns contentNotFound
+ * @returns isArticle
  */
 export default function () {
   function contentNotFound(page: Ref<any>) {
@@ -17,5 +19,9 @@ export default function () {
     throw createError({ fatal: true, statusCode: 404 })
   }
 
-  return { contentNotFound }
+  function isArticle(entry?: ParsedContent): boolean {
+    return Boolean(entry?._path?.startsWith('/articles/'))
+  }
+
+  return { contentNotFound, isArticle }
 }

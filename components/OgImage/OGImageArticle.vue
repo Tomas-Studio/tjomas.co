@@ -14,16 +14,16 @@ withDefaults(defineProps<Props>(), { title: 'Article', description: undefined, d
 </script>
 
 <template>
-  <div class="wfull hfull px12 pt20 pb16 relative flex-(~ col) justify-between text-gray-3" style="background: #050505;">
+  <div class="wfull hfull px20 pt20 pb16 relative flex-(~ col) justify-between text-gray-3" style="background: #050505;">
     <div>
       <p
         style="background: rgba(244, 180, 0, 0.1); color: #F4B400; font-family: 'acorn'"
-        class="px2 py1 mb2 w-[62ch]"
+        class="px2 py1 text-8 mb2 w-[110ch]"
       >
         Article
       </p>
       <h1
-        class="text-(5xl balance) w-70% font-acorn"
+        class="text-(6xl balance) font-acorn"
         style="font-family: 'acorn'"
       >
         {{ title }}
@@ -37,14 +37,14 @@ withDefaults(defineProps<Props>(), { title: 'Article', description: undefined, d
     </div>
     <div>
       <div class="flex justify-between">
-        <div class="text-5xl">
+        <div class="text-6xl">
           TO
         </div>
-        <p v-if="date" style="font-family: 'acorn'">
+        <p v-if="date" style="font-family: 'acorn'" class="text-5">
           {{ date }}
         </p>
       </div>
-      <span style="font-family: 'acorn';">Tunji Olakunle</span>
+      <span class="text-5" style="font-family: 'acorn';">Tunji Olakunle</span>
     </div>
     <!-- svg patterns -->
     <svg class="absolute inset-0 opacity-70" style="z-index: 0;" width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
