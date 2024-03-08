@@ -14,14 +14,14 @@ withDefaults(defineProps<Props>(), { title: 'Tunji Olakunle', description: 'I co
 <template>
   <div class="wfull hfull px30 relative flex-(~ col) justify-center text-gray-3" style="background: #050505;">
     <div class="flex gap-x-6">
-      <div class="text-8xl">
+      <div class="text-10rem">
         TO
       </div>
       <div class="flex-1">
-        <p class="mt--1px text-xl" style="font-family: 'acorn'">
+        <p class="text-5xl" style="font-family: 'acorn'">
           {{ title }}
         </p>
-        <p class="mt--2.5 text-(lg balance) w-60%" style="font-family: 'Urbanist'">
+        <p class="mt--2 text-(3xl balance)" style="font-family: 'Urbanist'">
           {{ description }}
         </p>
       </div>
