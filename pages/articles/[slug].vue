@@ -61,12 +61,12 @@ defineOgImage({
       <div>
         <span>More Articles</span>
         <div w-full mt5 flex flex-col md:flex-row justify-between lt-md:gap-y-8 md:gap-x-5>
-          <InArticlePreview v-if="prev && isArticle(prev)" :article="prev" />
+          <InArticlePreview v-if="isArticle(prev)" :article="prev" />
           <div
-            v-if="prev && next && isArticle(prev) && isArticle(next)"
+            v-if="isArticle(prev) && isArticle(next)"
             class="md:mx4 lt-md:h1px md:w1px bg-brand-green/70"
           />
-          <InArticlePreview v-if="next && isArticle(next)" :article="next" />
+          <InArticlePreview v-if="isArticle(next)" :article="next" />
         </div>
       </div>
     </div>
