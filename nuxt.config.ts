@@ -22,4 +22,5 @@ export default defineNuxtConfig({
     spotifyClientSecret: process.env.NUXT_PUBLIC_SPOTIFY_CLIENT_SECRET,
     spotifyClientId: process.env.NUXT_PUBLIC_SPOTIFY_CLIENT_ID,
   },
+  nitro: { preset: 'render-com' },
 })
