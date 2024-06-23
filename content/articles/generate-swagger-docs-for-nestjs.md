@@ -1,6 +1,6 @@
 ---
 title: 'Generate Swagger Documentation for a Nest.js API'
-description: 'How to generate Swagger Documentation for a Next.js API' 
+description: 'How to generate Swagger Documentation for a Next.js API'
 dateModified: "2024-02-05"
 datePublished: "2024-02-06"
 tags:
@@ -23,16 +23,15 @@ In simple terms, an OpenAPI Specification is a document describing the structure
 - authentication methods
 - and the responses
 
-On the other hand, Swagger Documentation _(Swagger UI is the correct name)_ is part of a suite of open-source tools used to interact with the OpenAPI Specification. 
+On the other hand, Swagger Documentation _(Swagger UI is the correct name)_ is part of a suite of open-source tools used to interact with the OpenAPI Specification.
 
 Swagger UI generates an interactive web interface _(documentation)_ for the provided API, and it uses the OpenAPI Specification to do it.
-
 
 ![The image shows the Swagger UI (documentation) for the public Documenso API.](/post/openapi.webp)
 
 ## How to generate OpenAPI Specification
 
-The first step is to generate the OpenAPI Specification. It's important to mention that this post shows a Next.js API built with ts-rest. 
+The first step is to generate the OpenAPI Specification. It's important to mention that this post shows a Next.js API built with ts-rest.
 
 With `ts-rest` you can seamlessly generate an OpenAPI Specification as follows:
 
@@ -102,7 +101,7 @@ If you access `http://localhost:3000/api/v1/openapi`, you should see the auto-ge
 
 ![The image shows the Swagger UI (documentation) for the public Documenso API.](/post/openapi.webp)
 
-## Generating OpenAPI Specification 
+## Generating OpenAPI Specification
 
 You can interact with the documentation by clicking on any endpoint. Doing it opens a new section where you can see more information, such as parameters and responses. It even allows you to make requests.
 
@@ -111,4 +110,3 @@ So, the auto-generated documentation is helpful for API users who want to explor
 > Note: The code is extracted from the Documenso project, which uses both the "Pages" and "App" routes for APIs. Feel free to adjust the code so it works with your code.
 
 Read more of my [articles](/articles)
-
