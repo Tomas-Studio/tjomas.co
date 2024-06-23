@@ -7,11 +7,11 @@
 - [ ] Add About me
 - [ ] Add Experience to about page
 - [x] Add Custom Error Page
-- [ ] Add content on project page 
+- [ ] Add content on project page
 - [x] Create Tag content
 - [x] Add Tag page
 - [ ] Write 2 real article
-- [ ] Get domain from Namecheap or competitors 
+- [ ] Get domain from Namecheap or competitors
 - [x] Work on the withGsap site and deploy
 - [ ] Work on the vue OTP input package
 - [ ] Change of Playlist of site

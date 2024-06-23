@@ -14,7 +14,7 @@ showTocAlways: false
 
 :toc
 
-This article covers the conventional way of building full-stack applications and why manually building your backend is not always the best choice. 
+This article covers the conventional way of building full-stack applications and why manually building your backend is not always the best choice.
 <!-- more -->
 You'll see an alternative solution for your backend needs that can be used standalone or coupled with your custom-built backend.
 
