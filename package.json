@@ -25,6 +25,7 @@
     "@iconify/json": "^2.2.233",
     "@nuxt/content": "^2.13.2",
     "@nuxt/devtools": "^1.3.9",
+    "@nuxt/fonts": "^0.7.1",
     "@nuxt/image": "^1.7.0",
     "@nuxtjs/color-mode": "^3.4.2",
     "@nuxtjs/fontaine": "^0.4.3",

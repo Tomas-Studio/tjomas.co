@@ -12,6 +12,7 @@ export default defineNuxtConfig({
     '@vueuse/motion/nuxt',
     'nuxt-og-image',
     '@nuxtjs/fontaine',
+    '@nuxt/fonts',
   ],
 
   colorMode: { classSuffix: '', preference: 'dark', storageKey: 'site-color-mode' },
@@ -20,6 +21,15 @@ export default defineNuxtConfig({
   content: {
     documentDriven: true,
     markdown: { remarkPlugins: ['remark-reading-time'] },
+  },
+
+  fonts: {
+    families: [
+      { name: 'Urbanist', provider: 'google' },
+      { name: 'DM Mono', provider: 'google' },
+      { name: 'Libre Baskerville', provider: 'google' },
+      { name: 'Luckiest Guy', provider: 'google' },
+    ],
   },
 
   runtimeConfig: {

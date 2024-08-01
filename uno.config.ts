@@ -4,7 +4,6 @@ import {
   presetIcons,
   presetTypography,
   presetUno,
-  presetWebFonts,
   transformerDirectives,
   transformerVariantGroup,
 } from 'unocss'
@@ -44,36 +43,27 @@ export default defineConfig({
         green: '#0F9D58',
       },
     },
+    fontFamily: {
+      sans: 'Urbanist',
+      mono: 'DM Mono',
+      secondary: 'Libre Baskerville',
+      logo: 'Luckiest Guy',
+    },
   },
   presets: [
     presetUno(),
     presetIcons(),
     presetAttributify(),
-    presetWebFonts({
-      provider: 'google',
-      fonts: {
-        sans: 'Urbanist:300,400,500,600,700,800,900',
-        mono: 'DM Mono:300,400',
-        secondary: [
-          { name: 'Libre Baskerville', weights: ['400'], italic: true },
-          { name: 'serif', provider: 'none' },
-        ],
-        logo: [
-          { name: 'Luckiest Guy', weights: ['400'] },
-          { name: 'cursive', provider: 'none' },
-        ],
-      },
-    }),
     presetTypography(),
   ],
   extractors: [
     extractorMdc(),
   ],
-  // content: {
-  //   filesystem: [
-  //     './content/**/*.md',
-  //   ],
-  // },
+  content: {
+    pipeline: {
+      include: [/\.ts/, /\.vue$/, /\.vue\?vue/],
+    },
+  },
   transformers: [
     transformerDirectives(),
     transformerVariantGroup(),
