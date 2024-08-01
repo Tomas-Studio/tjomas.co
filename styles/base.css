@@ -12,7 +12,7 @@ html.dark {
 }
 
 ::selection{
-  --uno: bg-brand-green/70 text-gray-9;
+  --uno: bg-brand-green/70 text-dark;
 }
 
 /* slide-up animation inspire by https://paco.me/ */
@@ -64,7 +64,7 @@ html.dark {
 }
 
 ::-webkit-scrollbar-thumb {
-  --uno: bg-brand-green/70 rounded-8px bg-clip-padding;
+  --uno: bg-brand-green/70 rounded-12px bg-clip-padding;
   --uno: border-8 border-solid border-transparent;
 }
 
