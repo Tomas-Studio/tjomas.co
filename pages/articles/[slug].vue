@@ -47,9 +47,7 @@ defineOgImage({
       <div h1px w20 bg-brand-green mb />
     </div>
     <ContentDoc v-slot="{ doc }">
-      <article>
-        <ContentRenderer :value="doc" class="slide-enter-content" />
-      </article>
+      <ContentRenderer :value="doc" class="slide-enter-content" />
     </ContentDoc>
     <div mt12 mb20>
       <hr class="bg-brand-green/70 my10 h0.5px border-0">
