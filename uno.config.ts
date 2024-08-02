@@ -4,7 +4,6 @@ import {
   presetIcons,
   presetTypography,
   presetUno,
-  presetWebFonts,
   transformerDirectives,
   transformerVariantGroup,
 } from 'unocss'
@@ -36,44 +35,35 @@ export default defineConfig({
     colors: {
       dark: '#050505',
       brand: {
-        DEFAULT: '#4285F4',
-        dark: '#3569BE',
-        active: '#294F8E',
-        red: '#DB4437',
-        yellow: '#F4B400',
-        green: '#0F9D58',
+        DEFAULT: 'rgba(66,133,244,1)',
+        dark: 'rgba(53,105,190,1)',
+        active: 'rgba(41,79,142,1)',
+        red: 'rgba(219,68,55,1)',
+        yellow: 'rgba(244,180,0,1)',
+        green: 'rgba(15,157,88,1)',
       },
+    },
+    fontFamily: {
+      sans: 'Urbanist',
+      mono: 'DM Mono',
+      secondary: 'Libre Baskerville',
+      logo: 'Luckiest Guy',
     },
   },
   presets: [
     presetUno(),
     presetIcons(),
     presetAttributify(),
-    presetWebFonts({
-      provider: 'google',
-      fonts: {
-        sans: 'Urbanist:300,400,500,600,700,800,900',
-        mono: 'DM Mono:300,400',
-        secondary: [
-          { name: 'Libre Baskerville', weights: ['400'], italic: true },
-          { name: 'serif', provider: 'none' },
-        ],
-        logo: [
-          { name: 'Luckiest Guy', weights: ['400'] },
-          { name: 'cursive', provider: 'none' },
-        ],
-      },
-    }),
     presetTypography(),
   ],
   extractors: [
     extractorMdc(),
   ],
-  // content: {
-  //   filesystem: [
-  //     './content/**/*.md',
-  //   ],
-  // },
+  content: {
+    pipeline: {
+      include: [/\.ts/, /\.vue$/, /\.vue\?vue/],
+    },
+  },
   transformers: [
     transformerDirectives(),
     transformerVariantGroup(),
