@@ -1,6 +1,6 @@
 <template>
   <div class="absolute inset-0 w-screen h-screen background-gradient">
-    <div class="h-30dvh w-full absolute bottom-0 left-0 bg-gradient-to-b from-dark/0 to-dark" />
+    <div class="h-30dvh w-full absolute bottom-0 left-0 bg-gradient-to-b from from-white/0 to-white dark:(from-dark/0 to-dark)" />
   </div>
 </template>
 
