@@ -35,12 +35,12 @@ export default defineConfig({
     colors: {
       dark: '#050505',
       brand: {
-        DEFAULT: '#4285F4',
-        dark: '#3569BE',
-        active: '#294F8E',
-        red: '#DB4437',
-        yellow: '#F4B400',
-        green: '#0F9D58',
+        DEFAULT: 'rgba(66,133,244,1)',
+        dark: 'rgba(53,105,190,1)',
+        active: 'rgba(41,79,142,1)',
+        red: 'rgba(219,68,55,1)',
+        yellow: 'rgba(244,180,0,1)',
+        green: 'rgba(15,157,88,1)',
       },
     },
     fontFamily: {
