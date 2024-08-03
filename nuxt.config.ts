@@ -11,7 +11,6 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@vueuse/motion/nuxt',
     'nuxt-og-image',
-    '@nuxtjs/fontaine',
     '@nuxt/fonts',
   ],
 

@@ -1,6 +1,7 @@
 import type { Ref } from 'vue'
-import type { ParsedContent } from '@nuxt/content/dist/runtime/types/index.js'
+import type { ParsedContent } from '@nuxt/content'
 
+// eslint-disable-next-line jsdoc/require-returns-check
 /**
  * Utility functions
  * @returns contentNotFound
@@ -11,9 +12,9 @@ export default function () {
     if (page.value)
       return
 
-    if (process.server) {
+    if (import.meta.server) {
       const event = useRequestEvent()
-      setResponseStatus(event, 404, 'Article not Found')
+      setResponseStatus(event!, 404, 'Article not Found')
     }
 
     throw createError({ fatal: true, statusCode: 404 })
