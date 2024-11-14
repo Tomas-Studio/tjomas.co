@@ -4,7 +4,7 @@ import FloatingVue from 'floating-vue'
 
 useHead({
   htmlAttrs: { lang: 'en', class: 'touch-manipulation' },
-  bodyAttrs: { class: 'touch-manipulation antialiased font-sans text-gray-8 dark:text-gray-3' },
+  bodyAttrs: { class: 'touch-manipulation antialiased font-sans text-gray-9 dark:text-gray-3' },
   link: [{ rel: 'icon', href: '/to-favicon.png' }],
 })
 

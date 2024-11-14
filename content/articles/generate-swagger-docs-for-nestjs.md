@@ -3,12 +3,14 @@ title: 'Generate Swagger Documentation for a Nest.js API'
 description: 'How to generate Swagger Documentation for a Next.js API'
 dateModified: "2024-02-05"
 datePublished: "2024-02-06"
+author: "Tunji Olakunle"
 tags:
   - nest
   - api
   - nuxt
 featured: true
 showToc: true
+type: "The Code Corner"
 ---
 
 :toc

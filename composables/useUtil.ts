@@ -20,7 +20,9 @@ export default function () {
     throw createError({ fatal: true, statusCode: 404 })
   }
 
-  function isArticle(entry?: ParsedContent): boolean {
+  function isArticle(
+    entry?: Omit<ParsedContent, 'body'> | null | undefined,
+  ): boolean {
     return Boolean(entry?._path?.startsWith('/articles/'))
   }
 

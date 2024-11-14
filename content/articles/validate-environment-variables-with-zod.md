@@ -3,12 +3,14 @@ title: "Validate Environment Variables With Zod"
 description: "This article teaches you how to validate environment variables with Zod."
 dateModified: "2024-02-13"
 datePublished: "2024-02-14"
+author: "Tunji Olakunle"
 tags:
   - zod
   - validation
 featured: true
 showToc: true
 showTocAlways: true
+type: "The Code Corner"
 ---
 
 :toc

@@ -16,12 +16,12 @@ const copytext = computed(() => {
 
 <template>
   <div fyc>
-    <span text-sm>Share on</span>
+    <span>Share on</span>
     <NuxtLink :to="links.shareOnX" target="_blank" p1.5 ml2 focusable aria-label="share this article on X">
       <div aria-hidden="true" i-line-md:twitter-x />
     </NuxtLink>
     <button
-      v-tooltip.right="{ content: copytext, distance: '15', triggers: ['hover'], shown: copied }"
+      v-tooltip.right="{ content: copytext, distance: '10', triggers: ['hover'], shown: copied }"
       ml2 p1.5 focusable
       aria-label="copy this article link"
       @click="copy(links.copyLink)"
