@@ -19,7 +19,7 @@ const { page: post } = useContent()
         :key="tag"
         :to="`/tags/${tag}`"
         :aria-label="`Link to ${tag} tag`"
-        class="text-2.75 uppercase fw700 text-brand-green hover:text-gray-3 duration-300"
+        class="text-2.75 uppercase fw700 text-brand-green dark:hover:text-gray-3 hover:text-neutral-9 duration-300"
       >
         {{ tag }}
       </NuxtLink>

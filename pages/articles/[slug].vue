@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { page: article, next } = useContent()
+const { page: article, prev, next } = useContent()
 const { contentNotFound, isArticle } = useUtil()
 
 contentNotFound(article)
@@ -11,6 +11,8 @@ const shareLinks = computed(() => {
   const shareOnX = encodeURI(rawXLink.replace(/#/g, 'No. '))
   return { shareOnX, copyLink: url.href }
 })
+
+const prevOrNext = computed(() => isArticle(next.value) ? next.value : prev.value)
 
 useSeoMeta({
   title: article.value.title,
@@ -56,12 +58,12 @@ defineOgImage({
     <article>
       <ContentRenderer :key="article._id" :value="article" class="slide-enter-content" />
     </article>
-    <ExtraArticle v-if="isArticle(next)" :article="next" />
+    <ExtraArticle v-if="isArticle(next) || isArticle(prev)" :article="prevOrNext" />
     <NuxtLink
       to="/articles"
-      class="mt-6 bg-neutral-3/35 group dark:bg-neutral-3/12 fcc p-4 w-full"
+      class="mt-6 bg-neutral-3/35 group dark:bg-neutral-3/10 fcc p-4 w-full"
     >
-      <div i-typcn:arrow-back text-xl mr-2 />
+      <div class="i-typcn:arrow-back text-2xl mr-2 group-hover:text-brand-yellow" />
       <span fw600 text-lg>Back to Article</span>
     </NuxtLink>
     <div mt10 mb20>

@@ -15,7 +15,7 @@ defineProps<Props>()
         :to="`#${link.id}`"
         class="text-sm mb2 block op80 dark:op50 underline-offset-3
           underline-1px hover:(op100 underline) duration-300
-          focus-visible:outline-0 focus-visible:(op100 underline)"
+          focus-visible:outline-0 focus-visible:(op100 underline) wmax"
       >
         {{ link.text }}
       </NuxtLink>

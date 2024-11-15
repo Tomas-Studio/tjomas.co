@@ -20,7 +20,7 @@ defineProps<Props>()
       </h2>
       <div flex flex-col-reverse lt-sm:gap-y-3 sm:flex-row justify-between>
         <div class="fyc text-(sm gray-5)">
-          <span mr1 fw600 text-3.75>{{ formatDate(new Date(article.datePublished), 'MMM DD, YYYY') }} </span>
+          <span mr1 fw600 text-3.75>{{ formatDate(new Date(article.datePublished), 'MMMM DD, YYYY') }} </span>
           <span fw700>•</span> <span ml1>{{ article.readingTime.text }}</span>
         </div>
         <div fyc gap-x-2.5>

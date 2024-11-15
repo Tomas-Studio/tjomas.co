@@ -1,7 +1,7 @@
 <template>
   <div my20 web-w>
-    <div flex flex-col md:flex-row py8 md:py14 md:gap-4 bg-dark dark:bg-gray-3 px5>
-      <h2 class="text-3xl text-gray-3 dark:text-gray-8 font-acorn">
+    <div class="flex flex-col md:flex-row py6 md:gap-4 bg-neutral-3/35 dark:bg-neutral-3/10 px5">
+      <h2 class="font-italic shrink-0 text-3xl font-acorn underline underline-neutral-9 dark:underline-gray-3 underline-3 underline-offset-6">
         Let's work together
       </h2>
       <div md:flex-auto />

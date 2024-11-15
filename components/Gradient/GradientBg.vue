@@ -1,7 +1,8 @@
 <template>
-  <div class="absolute inset-0 w-screen h-screen background-gradient">
-    <div class="h-30dvh w-full absolute bottom-0 left-0 bg-gradient-to-b from from-white/0 to-white dark:(from-dark/0 to-dark)" />
+  <div class="fixed inset-0 w-screen h-screen background-gradient">
+    <div class="h-30dvh w-full absolute bottom-0 left-0 bg-gradient-to-b from-white/0 to-white dark:(from-dark/0 to-dark)" />
   </div>
+  <div style="background-image:url(/noise.0e24d0e5.png)" class="[z-index:-1] pointer-events-none fixed inset-0 bg-repeat bg-[size:180px] opacity-[0.035] dark:opacity-[0.025]" />
 </template>
 
 <style scoped>
