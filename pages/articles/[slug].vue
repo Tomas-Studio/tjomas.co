@@ -46,7 +46,7 @@ defineOgImage({
       <div h1px wfull bg-neutral-500 mt-4 mb-2 />
       <div mb-2 text-gray-5>
         <p fw300 mb-1>
-          By <span class="fw500 text-neutral-9 dark:text-neutral-1 uppercase text-sm">{{ article.author }}</span>
+          By <span class="fw600 text-neutral-9 dark:text-neutral-1 uppercase text-sm">{{ article.author }}</span>
         </p>
         <p text-3.75>
           <span> {{ publishedDate }}</span> •

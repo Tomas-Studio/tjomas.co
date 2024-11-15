@@ -15,7 +15,7 @@ type Props = {
 const props = withDefaults(defineProps<Props>(), { code: '', filename: null, language: '', meta: null, class: null, highlights: () => [], style: null })
 
 const highlighter = await getSingletonHighlighter ({
-  themes: ['vitesse-dark', 'catppuccin-latte'],
+  themes: ['vitesse-dark', 'catppuccin-latte', 'solarized-light', 'andromeeda'],
   langs: ['css', 'js', 'vue', 'ts', 'text', 'scala'],
 })
 
@@ -23,7 +23,7 @@ const highlight = computed(() => {
   return highlighter.codeToHtml(props.code, {
     lang: props.language,
     themes: {
-      light: 'catppuccin-latte',
+      light: 'vitesse-dark',
       dark: 'vitesse-dark',
     },
     transformers: [
@@ -45,7 +45,7 @@ const { copy, copied } = useClipboard()
     <div class="absolute top-2.5 left-2 flex gap-x-2">
       <span
         v-for="count in 3" :key="count"
-        class="inline-block size-3 rounded-full bg-neutral-3 dark:bg-neutral-8"
+        class="inline-block size-3 rounded-full bg-neutral-8"
       />
     </div>
     <button
