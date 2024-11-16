@@ -1,6 +1,7 @@
 ---
 title: 'Generate Swagger Documentation for a Nest.js API'
 description: 'How to generate Swagger Documentation for a Next.js API'
+cover: '/img/post/article-loading-2.webp'
 dateModified: "2024-02-05"
 datePublished: "2024-02-06"
 author: "Tunji Olakunle"
@@ -112,6 +113,8 @@ You can interact with the documentation by clicking on any endpoint. Doing it op
 
 So, the auto-generated documentation is helpful for API users who want to explore and interact with the API before implementing it in their apps.
 
-> Note: The code is extracted from the Documenso project, which uses both the "Pages" and "App" routes for APIs. Feel free to adjust the code so it works with your code.
+::warning
+ Note: The code is extracted from the Documenso project, which uses both the "Pages" and "App" routes for APIs. Feel free to adjust the code so it works with your code.
+::
 
 Read more of my [articles](/articles)

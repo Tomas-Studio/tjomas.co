@@ -1,6 +1,7 @@
 ---
 title: "Rethink Full-Stack Development: Is a Custom Backend the Best Choice?"
 description: "This article covers the conventional way of building full-stack applications and why manually building your backend is not always the best choice. You'll see an alternative solution for your backend needs that can be used standalone or coupled with your custom-built backend."
+cover: '/img/post/article-loading-2.webp'
 author: "Tunji Olakunle"
 dateModified: "2024-02-12"
 datePublished: "2024-02-13"

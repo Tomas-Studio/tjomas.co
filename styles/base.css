@@ -82,6 +82,17 @@ html.dark {
   --uno: hidden;
 }
 
+/* Hide scrollbar for Chrome, Safari, and Opera */
+.hide-sb::-webkit-scrollbar {
+display: none;
+}
+
+/* Hide scrollbar for IE, Edge, and Firefox */
+.hide-sb {
+-ms-overflow-style: none; /* IE and Edge */
+scrollbar-width: none; /* Firefox */
+}
+
 ::view-transition-old(root),
 ::view-transition-new(root) {
   animation: none;
@@ -109,4 +120,16 @@ html.dark .shiki span {
   font-style: var(--shiki-dark-font-style) !important;
   font-weight: var(--shiki-dark-font-weight) !important;
   text-decoration: var(--shiki-dark-text-decoration) !important;
+}
+
+/* image loading background */
+.img-bg{
+  background-image: url("data:image/svg+xml,%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 22.9 22.9' style='enable-background:new 0 0 22.9 22.9;' xml:space='preserve'%3E%3Ccircle fill='%230F9D5840' class='st0' cx='5.7' cy='5.9' r='3'/%3E%3Ccircle fill='%230F9D5840' class='st0' cx='17.2' cy='17.2' r='3'/%3E%3C/svg%3E%0A");
+  background-size: 12px;
+}
+
+.home-drift {
+	background-size: 11px;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 22.93 22.93'%3E%3Cpolygon fill='%230F9D5840' points='0 8.18 14.75 22.93 22.74 22.93 0 0.19 0 8.18'/%3E%3Cpolygon fill='%230F9D5840' points='22.93 8.37 22.93 0.38 22.56 0 14.56 0 22.93 8.37'/%3E%3C/svg%3E");
+	opacity: 0.6;
 }

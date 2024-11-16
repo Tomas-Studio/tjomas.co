@@ -1,6 +1,7 @@
 ---
 title: "Validate Environment Variables With Zod"
 description: "This article teaches you how to validate environment variables with Zod."
+cover: '/img/post/article-loading-2.webp'
 dateModified: "2024-02-13"
 datePublished: "2024-02-14"
 author: "Tunji Olakunle"

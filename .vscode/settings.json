@@ -38,9 +38,9 @@
     "jsonc",
     "yaml"
   ],
-  "files.associations": {
-    "*.css": "postcss"
-  },
+  // "files.associations": {
+  //   "*.css": "postcss"
+  // },
   "volar.completion.preferredTagNameCase": "pascal",
   "volar.completion.preferredAttrNameCase": "kebab"
 }
