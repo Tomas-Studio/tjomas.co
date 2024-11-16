@@ -17,6 +17,7 @@ type: "The Code Corner"
 
 This post teaches you how to generate Swagger documentation for your Next.js API. You also learn how to generate the OpenAPI Specification required by Swagger.
 <!--more-->
+
 In simple terms, an OpenAPI Specification is a document describing the structure of a REST API and how to interact with it. It contains information such as:
 
 - the endpoints and their associated HTTP method
@@ -76,7 +77,9 @@ Considering that you placed the code in the `/pages/api/v1/openapi.json.ts` file
 
 ### How to generate OpenAPI
 
-> Note: The code is extracted from the Documenso project, which uses both the "Pages" and "App" routes for APIs. Feel free to adjust the code so it works with your code
+::info
+ Note: The code is extracted from the Documenso project, which uses both the "Pages" and "App" routes for APIs. Feel free to adjust the code so it works with your code
+::
 
 ## Generate Swagger Documentation from OpenAPI Specification
 

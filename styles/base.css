@@ -1,8 +1,13 @@
+:root {
+  --page-bg: #ffffff80
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 html.dark {
+  --page-bg: rgb(5, 5, 5, 0.7 );
   --uno: bg-dark;
 }
 

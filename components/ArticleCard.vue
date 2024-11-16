@@ -15,7 +15,7 @@ defineProps<Props>()
     class="block mb6 group focus-visible:outline-none"
   >
     <div>
-      <h2 class="font-acorn text-(xl balance) group-hover:text-brand-green group-focus-visible:text-brand-green duration-300">
+      <h2 class="font-acorn text-(2xl balance) group-hover:text-brand-green group-focus-visible:text-brand-green duration-300">
         {{ article.title }} <span v-if="article.external" inline-block relative mb--1 ml2 h5 i-line-md-external-link-rounded />
       </h2>
       <div flex flex-col-reverse lt-sm:gap-y-3 sm:flex-row justify-between>
