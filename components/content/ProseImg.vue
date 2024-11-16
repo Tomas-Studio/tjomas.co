@@ -24,7 +24,7 @@ const refinedSrc = computed(() => {
 <template>
   <figure py6>
     <NuxtImg v-show="loaded" :src="refinedSrc" :alt="props.alt" :width="props.width" :height="props.height" @load="loaded = true" />
-    <div v-show="!loaded" class="img-bg aspect-ratio-16/9 w-full h27em rounded-sm" />
+    <div v-show="!loaded" class="img-bg aspect-ratio-16/9 w-full md:h27em rounded-sm" />
     <figcaption class="text-(center 3.75 gray-5) fw400 mt2">
       {{ props.alt }}
     </figcaption>

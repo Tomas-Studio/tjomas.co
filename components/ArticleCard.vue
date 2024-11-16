@@ -17,7 +17,7 @@ const loaded = ref(false)
       class="shrink-0 focusable"
     >
       <NuxtImg v-show="loaded" :src="article.cover" class="lt-md:w-full aspect-ratio-16/9 md:h34" @load="loaded = true" />
-      <div v-show="!loaded" class="img-bg aspect-ratio-16/9 h-34" />
+      <div v-show="!loaded" class="img-bg lt-md:w-full aspect-ratio-16/9 md:h-34" />
     </NuxtLink>
     <div md:pt-1>
       <div class="flex gap-3 mb-1">

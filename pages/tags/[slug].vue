@@ -45,7 +45,7 @@ const articles = await queryContent('articles').where({ tags: { $contains: `${ta
     </div>
     <div class="my8">
       <div v-if="articles.length > 0" class="slide-enter-content">
-        <h2 class="uppercase text-(sm brand-yellow) fw700 tracking-wide mb6">
+        <h2 class="uppercase text-( brand-yellow) fw700 tracking-wide mb6">
           Articles
         </h2>
         <ArticleCard v-for="item of articles" :key="item._path" :article="item" />
