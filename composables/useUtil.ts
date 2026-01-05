@@ -1,13 +1,13 @@
 import type { Ref } from 'vue'
 import type { ParsedContent } from '@nuxt/content'
 
-// eslint-disable-next-line jsdoc/require-returns-check
 /**
  * Utility functions
  * @returns contentNotFound
  * @returns isArticle
  */
 export default function () {
+  /* eslint-disable @typescript-eslint/no-explicit-any */
   function contentNotFound(page: Ref<any>) {
     if (page.value)
       return

@@ -3,6 +3,8 @@ type Props = {
   links: {
     shareOnX: string
     copyLink: string
+    shareOnLinkedIn: string
+    shareAsEmail: string
   }
 }
 
@@ -17,8 +19,14 @@ const copytext = computed(() => {
 <template>
   <div fyc>
     <span>Share on</span>
-    <NuxtLink :to="links.shareOnX" target="_blank" p1.5 ml2 focusable aria-label="share this article on X">
-      <div aria-hidden="true" i-line-md:twitter-x />
+    <NuxtLink :to="links.shareOnX" target="_blank" p1.5 ml2 focusable aria-label="share this article on X formerly Twitter">
+      <div aria-hidden="true" i-line-md:twitter-x text-lg />
+    </NuxtLink>
+    <NuxtLink :to="links.shareOnLinkedIn" target="_blank" p1.5 ml2 focusable aria-label="share this article on LinkedIn">
+      <div aria-hidden="true" i-line-md:linkedin text-lg />
+    </NuxtLink>
+    <NuxtLink :to="links.shareAsEmail" p1.5 ml2 focusable aria-label="share this article as an email">
+      <div aria-hidden="true" i-line-md:email-arrow-down text-lg />
     </NuxtLink>
     <button
       v-tooltip.right="{ content: copytext, distance: '10', triggers: ['hover'], shown: copied }"

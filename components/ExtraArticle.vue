@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 type Props = {
+  /* eslint-disable @typescript-eslint/no-explicit-any */
   article: any | null
 }
 

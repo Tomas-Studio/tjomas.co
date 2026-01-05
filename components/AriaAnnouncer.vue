@@ -24,7 +24,6 @@ onMounted(() => {
   })
 
   router.afterEach((_, from) => {
-    // eslint-disable-next-line ts/no-unused-expressions
     from && setTimeout(() => {
       requestAnimationFrame(() => {
         const title = document.title.trim().split('•')

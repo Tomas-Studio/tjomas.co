@@ -13,7 +13,6 @@ export default function (el: Ref<HTMLAudioElement | null>) {
       return
 
     isPaused.value = el.value!.paused
-    // eslint-disable-next-line ts/no-unused-expressions
     isPaused.value ? el.value?.play() : el.value?.pause()
   }
 

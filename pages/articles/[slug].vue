@@ -9,7 +9,9 @@ const publishedDate = useDateFormat(article.value.datePublished, 'MMMM DD, YYYY'
 const shareLinks = computed(() => {
   const rawXLink = `https://twitter.com/intent/tweet?text=I read "${article.value.title}". Have a look it at&url=${url}&via=TunjiOlakunle`
   const shareOnX = encodeURI(rawXLink.replace(/#/g, 'No. '))
-  return { shareOnX, copyLink: url.href }
+  const shareAsEmail = `mailto:?subject=I read "${article.value.title}". Have a look it at&url=${url}`
+  const shareOnLinkedIn = ``
+  return { shareOnX, copyLink: url.href, shareAsEmail, shareOnLinkedIn }
 })
 
 const prevOrNext = computed(() => isArticle(next.value) ? next.value : prev.value)
@@ -61,7 +63,7 @@ defineOgImage({
     <ExtraArticle v-if="isArticle(next) || isArticle(prev)" :article="prevOrNext" />
     <NuxtLink
       to="/articles"
-      class="mt-6 bg-neutral-3/35 group dark:bg-neutral-3/10 fcc p-4 w-full"
+      class="mt-6 bg-neutral-3/35 group dark:bg-neutral-3/10 fcc p-4 w-full focusable"
     >
       <div class="i-typcn:arrow-back text-2xl mr-2 group-hover:text-brand-yellow" />
       <span fw600 text-lg>Back to Article</span>

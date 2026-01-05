@@ -1,6 +1,7 @@
 import { getToken } from '../utils/shared'
+import type { H3Event } from 'h3'
 
-export default defineEventHandler(async (event) => {
+export default defineEventHandler(async (event: H3Event) => {
   const config = useRuntimeConfig(event)
 
   const token = await getToken(config.spotifyClientId, config.spotifyClientSecret)
@@ -15,6 +16,7 @@ export default defineEventHandler(async (event) => {
     params: { ids: ids2 },
   })
 
+  /* eslint-disable @typescript-eslint/no-explicit-any */
   const selected = (data as any).tracks![Math.floor(Math.random() * (data as any).tracks!.length)]
 
   return selected

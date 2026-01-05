@@ -2,6 +2,7 @@
 import { formatDate } from '@vueuse/core'
 
 type Props = {
+  /* eslint-disable @typescript-eslint/no-explicit-any */
   article: any
 }
 

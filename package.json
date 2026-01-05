@@ -2,7 +2,6 @@
   "name": "tjomas.co",
   "type": "module",
   "private": true,
-  "packageManager": "pnpm@9.1.2",
   "description": "My Personal Website",
   "author": {
     "email": "tjomas20@gmail.com",
@@ -20,36 +19,39 @@
     "lintfix": "eslint . --fix"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.24.1",
     "@antfu/ni": "^0.22.0",
     "@iconify/json": "^2.2.233",
-    "@nuxt/content": "^2.13.2",
+    "@nuxt/content": "^3.10.0",
     "@nuxt/devtools": "^1.3.9",
+    "@nuxt/eslint": "1.12.1",
     "@nuxt/fonts": "^0.7.1",
-    "@nuxt/image": "^1.7.0",
+    "@nuxt/image": "^2.0.0",
     "@nuxtjs/color-mode": "^3.4.2",
     "@shikijs/rehype": "^1.12.1",
     "@shikijs/transformers": "^1.23.0",
     "@unocss/extractor-mdc": "^0.61.9",
-    "@unocss/nuxt": "^0.61.9",
+    "@unocss/nuxt": "^66.5.12",
     "@unocss/transformer-variant-group": "^0.61.9",
     "@vueuse/motion": "^2.2.3",
     "@vueuse/nuxt": "^10.11.0",
     "eslint": "^9.8.0",
     "floating-vue": "5.2.2",
     "lint-staged": "^15.2.7",
-    "nuxt": "^3.12.4",
-    "nuxt-og-image": "3.0.0-rc.64",
+    "nuxt": "^3.17.7",
+    "nuxt-og-image": "5.1.13",
     "rehype-shiki": "^0.0.9",
     "remark-reading-time": "^2.0.1",
     "simple-git-hooks": "^2.11.1",
-    "vue": "^3.4.35",
-    "vue-router": "^4.4.2"
+    "vue": "^3.5.26",
+    "vue-router": "^4.6.4"
   },
   "simple-git-hooks": {
     "pre-commit": "na lint-staged"
   },
   "lint-staged": {
     "*": "eslint . --fix"
+  },
+  "dependencies": {
+    "better-sqlite3": "^12.5.0"
   }
 }

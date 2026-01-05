@@ -1,7 +1,7 @@
 ---
 title: 'Generate Swagger Documentation for a Nest.js API'
 description: 'How to generate Swagger Documentation for a Next.js API'
-cover: '/img/post/article-loading-2.webp'
+cover: '/img/post/article-thumbnail-2.webp'
 dateModified: "2024-02-05"
 datePublished: "2024-02-06"
 author: "Tunji Olakunle"

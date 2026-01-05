@@ -1,10 +1,24 @@
-import antfu from '@antfu/eslint-config'
+// @ts-check
+import withNuxt from './.nuxt/eslint.config.mjs'
 
-export default antfu({
+export default withNuxt({
   rules: {
-    'ts/consistent-type-definitions': ['warn', 'type'],
-    'node/prefer-global/process': 'off',
-    'max-statements-per-line': 'off',
-    'style/max-statements-per-line': 'off',
+    'vue/multi-word-component-names': 'off',
+    'vue/max-attributes-per-line': 'off',
+    'vue/html-self-closing': [
+      'warn',
+      {
+        html: {
+          void: 'always',
+          normal: 'always',
+          component: 'always',
+        },
+      },
+    ],
+    '@typescript-eslint/no-unused-expressions': 'off',
+    '@stylistic/max-statements-per-line': 'warn',
+    'vue/no-dupe-keys': 'warn',
+    '@typescript-eslint/no-dynamic-delete': 'off',
   },
+  ignores: ['*.css', '*.png', '*.ico', '*.txt', 'src/public/'],
 })

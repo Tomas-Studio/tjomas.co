@@ -8,9 +8,11 @@ defineOgImage({
 </script>
 
 <template>
-  <HomeIntro />
-  <HomeStatement />
-  <HomeProject />
-  <HomeArticle />
-  <HomeAction />
+  <section>
+    <HomeIntro />
+    <HomeStatement />
+    <HomeProject />
+    <HomeArticle />
+    <HomeAction />
+  </section>
 </template>
