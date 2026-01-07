@@ -3,7 +3,8 @@ import {
   presetAttributify,
   presetIcons,
   presetTypography,
-  presetUno,
+  presetMini,
+  presetWind4,
   transformerDirectives,
   transformerVariantGroup,
 } from 'unocss'
@@ -12,7 +13,7 @@ import extractorMdc from '@unocss/extractor-mdc'
 export default defineConfig({
   shortcuts: [
     {
-      'navigation2': 'flex gap-x-1 sm:gap-x-2 pl2 pr1 wfull bg-white/90 dark:bg-white/3 border border-gray-3 dark:border-gray-2/20 shadow-lg shadow-gray-9/6 dark:shadow-white/2 backdrop-blur rounded-sm',
+      'navigation2': 'flex gap-x-1 sm:gap-x-2 pl2 pr1 wfull bg-white/90 dark:bg-white/3 border border-gray-3 dark:border-gray-2/20 shadow-lg shadow-gray-9/6 dark:shadow-white/2 rounded-sm',
       'navigation': 'flex gap-x-1 sm:gap-x-2 wfull px5 lg:px20',
       'ww': 'lt-lg:px5 max-w-2xl',
       'web-w': 'ww wfull mxauto',
@@ -52,7 +53,8 @@ export default defineConfig({
     },
   },
   presets: [
-    presetUno(),
+    presetMini(),
+    presetWind4(),
     presetIcons(),
     presetAttributify(),
     presetTypography(),

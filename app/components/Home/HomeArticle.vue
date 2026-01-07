@@ -1,7 +1,9 @@
 <script setup lang="ts">
 import { formatDate } from '@vueuse/core'
 
-const articles = await queryContent('articles').where({ featured: true }).sort({ dateModified: -1, datePublished: -1 }).find()
+const { data: articles } = await useAsyncData(`home-articles`, () => {
+  return queryCollection('articles').where('featured', '=', true).all()
+})
 </script>
 
 <template>
@@ -12,7 +14,7 @@ const articles = await queryContent('articles').where({ featured: true }).sort({
       </h3>
     </div>
     <div>
-      <NuxtLink v-for="post in articles" :key="post._path" :to="post._path" class="home-article" :aria-label="`go to article on ${post.title}`">
+      <NuxtLink v-for="post in articles" :key="post.id" :to="post.path" class="home-article" :aria-label="`go to article on ${post.title}`">
         <div fyc mb1.5 text-sm>
           <span class="a-tags">{{ post.tags.join(' • ') }}</span>
           <div border-b border-dashed w-10 border-gray-8 dark:border-gray-3 mx3 />

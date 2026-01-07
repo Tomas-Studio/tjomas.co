@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { AriaAnnounceType, AriaLive } from '~/composables/useAria'
+import type { AriaAnnounceType, AriaLive } from '~/app/composables/useAria'
 
 const router = useRouter()
 const { announce, ariaAnnouncer } = useAriaAnnouncer()

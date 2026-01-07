@@ -1,5 +1,5 @@
 import type { Ref } from 'vue'
-import type { ParsedContent } from '@nuxt/content'
+import type { ParsedContentv2 } from '@nuxt/content'
 
 /**
  * Utility functions
@@ -21,7 +21,7 @@ export default function () {
   }
 
   function isArticle(
-    entry?: Omit<ParsedContent, 'body'> | null | undefined,
+    entry?: ParsedContentv2 | null | undefined,
   ): boolean {
     return Boolean(entry?._path?.startsWith('/articles/'))
   }

@@ -13,19 +13,25 @@ export default defineNuxtConfig({
     '@nuxt/fonts',
     '@nuxt/eslint',
   ], devtools: { enabled: true },
+
   css: ['~/styles/base.css', '~/styles/overrides.css', '~/styles/font.css', '~/styles/animation.css'],
 
   colorMode: { classSuffix: '', preference: 'dark', storageKey: 'site-color-mode' },
 
   content: {
-    documentDriven: true,
-    markdown: { remarkPlugins: ['remark-reading-time'] },
+    build: {
+      markdown: {
+        remarkPlugins: {
+          'remark-reading-time': {},
+        },
+      },
+    },
   },
 
   runtimeConfig: {
     spotifyClientSecret: process.env.NUXT_PUBLIC_SPOTIFY_CLIENT_SECRET,
     spotifyClientId: process.env.NUXT_PUBLIC_SPOTIFY_CLIENT_ID,
-  },
+  }, future: { compatibilityVersion: 4 },
   compatibilityDate: '2024-08-01',
 
   nitro: { preset: 'render-com' },

@@ -6,7 +6,7 @@ const colorMode = useColorMode()
  * @see https://github.com/vuejs/vitepress/pull/2347
  */
 export function toggleTheme(event: MouseEvent) {
-  const isAppearanceTransition = document.startViewTransition
+  const isAppearanceTransition = document.startViewTransition()
     && !window.matchMedia('(prefers-reduced-motion: reduce)').matches
 
   if (!isAppearanceTransition) {
@@ -21,7 +21,6 @@ export function toggleTheme(event: MouseEvent) {
     Math.max(y, innerHeight - y),
   )
 
-  // @ts-expect-error: Transition API
   const transition = document.startViewTransition(async () => {
     colorMode.preference = colorMode.value === 'light' ? 'dark' : 'light'
     await nextTick()

@@ -1,12 +1,13 @@
 <script setup lang="ts">
-import { breakpointsTailwind } from '@vueuse/core'
+const CONVERTING = 'Converting'.split('')
+const DESIGNS = 'Designs'.split('')
+const PRODUCTS = 'Products'.split('')
 
-const breakpoints = useBreakpoints(breakpointsTailwind)
-const largerThanSm = breakpoints.greater('sm')
+const largerThanSm = useMediaQuery('(min-width: 600px)', { ssrWidth: 600 })
 
 const { x, y } = useMouse()
 
-const card = ref<HTMLDivElement | null>(null)
+const card = useTemplateRef('card')
 const { height, width } = useElementSize(card)
 
 const cardTransform = computed(() => {
@@ -20,12 +21,10 @@ const cardTransform = computed(() => {
     (x.value / width.value) * MAX_ROTATION - MAX_ROTATION / 2
   ).toFixed(2) // y-axis rotation
 
-  return largerThanSm.value ? `perspective(${width.value}px) rotateX(${rX}deg) rotateY(${rY}deg)` : ''
+  return largerThanSm.value
+    ? `perspective(${width.value}px) rotateX(${rX}deg) rotateY(${rY}deg)`
+    : ``
 })
-
-const CONVERTING = 'Converting'.split('')
-const DESIGNS = 'Designs'.split('')
-const PRODUCTS = 'Products'.split('')
 </script>
 
 <template>
@@ -34,7 +33,7 @@ const PRODUCTS = 'Products'.split('')
       <div relative>
         <div ref="card" :style="{ transform: cardTransform }" class="home-drift absolute left-4 lg:left-1.5/10 top--5 h-60 w-full lg:h-85 lg:w-120 of-hidden rounded-1 z--1 preserve-3d transition-transform duration-250 ease-out" />
         <div relative z-2>
-          <div class="font-acorn text-6xl sm:text-7xl lg:text-8xl flex-col gap-y-1">
+          <div class="font-acorn text-6xl sm:text-7xl lg:text-8xl flex-col gap-y-1 relative z-1">
             <div relative>
               <span v-for="letter, idx of CONVERTING" :key="idx" :style="{ animationDelay: `${(idx + 2) / 10}s` }" class="op0 inline-block animate-[1s_ease_0s_forwards_intro]">{{ letter }}</span>
             </div>
